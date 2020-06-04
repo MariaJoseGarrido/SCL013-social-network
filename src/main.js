@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 import { myFunction } from './lib/index.js';
 import { menu } from './lib/view/templateMenu.js';
 import { home } from './lib/view/TemplateHome.js';
@@ -19,12 +18,3 @@ const init=() => {
 }
 
 window.addEventListener('load', init)
-=======
-function iniciarSesion(){
-    var email= document.getElementById("email").value;
-    var password=document.getElementById("password").value;
-    
-    console.log(email);
-    console.log(password);
-}
->>>>>>> b7e3a6a907784469ec1ac9d88bb590dce6a34ad0

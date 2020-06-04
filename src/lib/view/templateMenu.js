@@ -1,9 +1,9 @@
-export const menu = () =>{
-    const viewMenu = `
+export const menu = () => {
+  const viewMenu = `
       <nav class="main-menu">
       <ul>
         <li>
-          <a href="#">
+          <a href="#home">
             <i class="fa fa-home"></i>
             <span class="nav-text">Inicio</span>
           </a>
@@ -96,6 +96,6 @@ export const menu = () =>{
   </nav>
   `
 
-return viewMenu;
+  return viewMenu;
 
 }

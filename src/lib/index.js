@@ -1,3 +1,7 @@
+import myFunction = () => {  
+  console.log('Hola mundo!');
+};
+
 export const login = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider).then(function (result) {

@@ -1,5 +1,5 @@
-export const menu = () =>{
-    const viewMenu = `
+export const menu = () => {
+  const viewMenu = `
       <nav class="main-menu">
       <ul>
         <li>
@@ -96,6 +96,6 @@ export const menu = () =>{
   </nav>
   `
 
-return viewMenu;
+  return viewMenu;
 
 }

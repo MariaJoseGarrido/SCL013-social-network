@@ -1,5 +1,5 @@
-import myFunction = () => {  
-  console.log('Hola mundo!');
+export const myFunction = () => {
+  console.log('hola mundo')
 };
 
 export const login = () => {

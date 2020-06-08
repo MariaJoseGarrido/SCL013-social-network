@@ -7,6 +7,6 @@ export const home = () => {
 
   divHome.innerHTML = viewHome;
   const btn = divHome.querySelector('#google');
-    btn.addEventListener('click', () => { login() })
+  btn.addEventListener('click', () => { login() })
   return divHome;
 }

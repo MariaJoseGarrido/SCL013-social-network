@@ -1,10 +1,12 @@
-
-import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
+import { identification } from './view/templateIdentificacion.js'
 import { menu } from './view/templateMenu.js';
-import { abastecete } from './view/templateAbastecete.js';
-import { eventos} from './view/templateEventos.js';
-import { dondebeber } from './view/templateDondeBeber.js';
+import { home } from './view/templateHome.js';
+import { registrarse } from './view/templateHome.js';
 import { iniciarSesion } from './view/templateIniciarSesion.js';
+import { dondebeber } from './view/templateDondeBeber.js';
+import { eventos } from './view/templateEventos.js';
+import { abastecete } from './view/templateAbastecete.js';
+import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
 
 export const changeRouter = (hash) => {
     if (hash === '#home') {
@@ -19,7 +21,9 @@ export const changeRouter = (hash) => {
         return showTemplate (hash)
     } else if (hash === '#iniciarsesion') {
         return showTemplate (hash)
-    } else {
+    } else if (hash === '#register') {
+        return showTemplate (hash)
+    }else {
         return showTemplate (hash)
     }
 } 
@@ -29,7 +33,7 @@ const showTemplate = (hash) => {
     containerRoot.innerHTML= menu();
 
     switch (hash) {
-        case '#':
+        case '#home':
             containerRoot.appendChild(home());
             break;
         case '#cerveceriasChilenas':    

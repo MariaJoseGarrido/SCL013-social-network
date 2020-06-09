@@ -44,7 +44,7 @@ export const abastecete = () => {
         <div class="shopOnline-card-img">
             <div class="shopOnline-card-img-content">
             <a href="https://www.beershopscl.cl/"> 
-                <img class="img-fluid" src="./img/logo-beershop.svg"  >
+                <img class="img-fluid" src="./img/logo-beershop.png">
             </a>
             </div>
         </div>

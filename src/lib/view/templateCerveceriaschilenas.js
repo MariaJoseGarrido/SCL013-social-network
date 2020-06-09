@@ -9,6 +9,7 @@ export const cerveceriasChilenas = () => {
         <section class="webbeer">
         <!-- sección cervezas # -->
         <div class="webbeer-content">
+        <br>
         <h3>#</h3>
         <div class="webbeer-content-logo">
             <a href="https://www.cervezamas56.cl/"> 
@@ -600,6 +601,15 @@ export const cerveceriasChilenas = () => {
             <img class="img-fluid" src="./img/Logos cervezas/volcanes.png">
             </a>
         </div>
+        </div>
+        </div>
+        <!-- sección cervezas W -->
+        <div class="webbeer-content">    
+        <h3>W</h3>
+        <div class="webbeer-content-logo">
+            <a href="https://cervezawalung.cl/">
+            <img class="img-fluid" src="./img/Logos cervezas/logo-walung.jpg">
+            </a>
         </div>
         <div class="clearfix"></div>  
         </section>

@@ -2,10 +2,10 @@ import { myFunction } from './lib/index.js';
 import { changeRouter } from './lib/router.js';
 import { identification } from './lib/view/templateIdentificacion.js'
 import { menu } from './lib/view/templateMenu.js';
-import { home } from './lib/view/templateHome.js';
-import { registrarse } from './lib/view/templateHome.js';
+import { home, registrarse } from './lib/view/templateHome.js';
+// import { registrarse } from './lib/view/templateHome.js';
 import { iniciarSesion } from './lib/view/templateIniciarSesion.js';
-//insertar Blog
+import { blog } from './lib/view/templateBlog.js';
 //comunibeer
 import { dondebeber } from './lib/view/templateDondeBeber.js';
 import { eventos } from './lib/view/templateEventos.js';

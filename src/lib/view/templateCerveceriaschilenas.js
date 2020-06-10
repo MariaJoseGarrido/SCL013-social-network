@@ -1,7 +1,7 @@
 export const cerveceriasChilenas = () => {
-    const divCerveceriasChilenas = document.createElement('div');
+  const divCerveceriasChilenas = document.createElement("div");
 
-    const viewCerveceriasChilenas = `
+  const viewCerveceriasChilenas = `
         <div id="banner">
              <img src="./img/bannerprueba1.png">
         </div>
@@ -9,6 +9,7 @@ export const cerveceriasChilenas = () => {
         <section class="webbeer">
         <!-- sección cervezas # -->
         <div class="webbeer-content">
+        <br>
         <h3>#</h3>
         <div class="webbeer-content-logo">
             <a href="https://www.cervezamas56.cl/"> 
@@ -291,6 +292,11 @@ export const cerveceriasChilenas = () => {
         <div class="webbeer-content">  
         <h3>J</h3>
         <div class="webbeer-content-logo">
+            <a href="https://cervezajauria.cl/"> 
+            <img class="img-fluid" src="./img/Logos cervezas/logo-jauria.png">
+            </a>
+         </div>
+        <div class="webbeer-content-logo">
             <a href="https://www.jester.cl/"> 
             <img class="img-fluid" src="./img/Logos cervezas/jester.png">
             </a>
@@ -556,13 +562,18 @@ export const cerveceriasChilenas = () => {
             </a>
         </div>
         <div class="webbeer-content-logo">
-            <a href="https://www.cervezatubinger.cl/"> 
+              <a href="https://www.cervezatubinger.cl/"> 
             <img class="img-fluid" src="./img/Logos cervezas/tubinger.png">
             </a>
         </div>
         <div class="webbeer-content-logo">
             <a href="https://www.cervezatribal.cl/"> 
-            <img class="img-fluid" src="./img/Logos cervezas/logo-tribal.png">
+              <img class="img-fluid" src="./img/Logos cervezas/logo-tribal.png">
+            </a>
+        </div>
+        <div class="webbeer-content-logo">
+            <a href="https://www.cervezatripulantes.cl/"> 
+             <img class="img-fluid" src="./img/Logos cervezas/logo-tripulante.jpg">
             </a>
         </div>
         <div class="webbeer-content-logo">
@@ -591,11 +602,20 @@ export const cerveceriasChilenas = () => {
             </a>
         </div>
         </div>
+        </div>
+        <!-- sección cervezas W -->
+        <div class="webbeer-content">    
+        <h3>W</h3>
+        <div class="webbeer-content-logo">
+            <a href="https://cervezawalung.cl/">
+            <img class="img-fluid" src="./img/Logos cervezas/logo-walung.jpg">
+            </a>
+        </div>
         <div class="clearfix"></div>  
         </section>
-    `
+    `;
 
-    divCerveceriasChilenas.innerHTML = viewCerveceriasChilenas;
+  divCerveceriasChilenas.innerHTML = viewCerveceriasChilenas;
 
-    return divCerveceriasChilenas;
-}
+  return divCerveceriasChilenas;
+};

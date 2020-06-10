@@ -5,7 +5,7 @@ export const eventos = () => {
         <img src="./img/bannerprueba1.png">
     </div>
 
-    <section class="canceled">
+    <section id="canceled">
          <img src="./img/eventoscancelados.png"> 
     </section> 
 `

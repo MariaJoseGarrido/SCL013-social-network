@@ -1,54 +1,73 @@
-
-import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
+import { identification } from './view/templateIdentificacion.js'
 import { menu } from './view/templateMenu.js';
-import { abastecete } from './view/templateAbastecete.js';
-import { eventos} from './view/templateEventos.js';
-import { dondebeber } from './view/templateDondeBeber.js';
+import { home, registrarse } from './view/templateHome.js';
+// import { registrarse } from './view/templateHome.js';
 import { iniciarSesion } from './view/templateIniciarSesion.js';
+import { blog } from './view/templateBlog.js';
+import { dondebeber } from './view/templateDondeBeber.js';
+import { eventos } from './view/templateEventos.js';
+import { abastecete } from './view/templateAbastecete.js';
+import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
+import { comuniBeer } from './view/templateComuniBeer.js';
 
 export const changeRouter = (hash) => {
     if (hash === '#home') {
-        return showTemplate (hash)
+        return showTemplate(hash)
     } else if (hash === '#cerveceriasChilenas') {
-        return showTemplate (hash) 
+        return showTemplate(hash)
     } else if (hash === '#eventos') {
-        return showTemplate (hash)
+        return showTemplate(hash)
     } else if (hash === '#abastecete') {
-        return showTemplate (hash)
+        return showTemplate(hash)
     } else if (hash === '#dondebeber') {
-        return showTemplate (hash)
+        return showTemplate(hash)
     } else if (hash === '#iniciarsesion') {
-        return showTemplate (hash)
+        return showTemplate(hash)
+    } else if (hash === '#registrarse') {
+        return showTemplate(hash)
+    } else if (hash === '#comunibeer') {
+        return showTemplate(hash)
+    } else if (hash === '#blog') {
+        return showTemplate(hash)
     } else {
-        return showTemplate (hash)
+        return showTemplate(hash)
     }
-} 
+}
 
 const showTemplate = (hash) => {
     const containerRoot = document.getElementById('root');
-    containerRoot.innerHTML= menu();
+    containerRoot.innerHTML = menu();
 
     switch (hash) {
-        case '#':
+        case '#home':
             containerRoot.appendChild(home());
             break;
-        case '#cerveceriasChilenas':    
+        case '#cerveceriasChilenas':
             containerRoot.appendChild(cerveceriasChilenas());
             break;
         case '#abastecete':
             containerRoot.appendChild(abastecete());
-            break;   
+            break;
         case '#eventos':
             containerRoot.appendChild(eventos());
             break;
         case '#dondebeber':
             containerRoot.appendChild(dondebeber());
-            break;    
+            break;
+        case '#blog':
+            containerRoot.appendChild(blog());
+            break;
+        case '#registrarse':
+            containerRoot.appendChild(registrarse());
+            break;
         case '#iniciarsesion':
             containerRoot.appendChild(iniciarSesion());
             break;
+        case '#comunibeer':
+            containerRoot.appendChild(comuniBeer());
+            break;
         default:
-            containerRoot.innerHTML = `<h2>No existe</h2>`    
-         
+            containerRoot.innerHTML = `<h2>No existe</h2>`
+
     }
 }

@@ -7,7 +7,7 @@ export const comuniBeer = () => {
         <input type="text" id="nombre" placeholder='nombre' class='form-control'></input>
         <input type="text" id="apellido" placeholder='apellido' class='form-control'></input>
         <input type='text' id="edad" placeholder='edad' class='form-control'></input>
-        <button class='btn-info' id='btn-comment' onclick='guardar()'>Comentar!</button>
+        <button class='btn-info' id='btn-comment'>Comentar!</button>
     </div>
 
     <div>
@@ -25,8 +25,10 @@ export const comuniBeer = () => {
   </table>
 </div>
     `
-  // document.getElementById('#btn-comment').addEventListener('click',guardar);
     divcomuniBeer.innerHTML = viewcomuniBeer;
+    const botonComentario = divcomuniBeer.querySelector('#btn-comment');
+    botonComentario.addEventListener('click',guardar);
+    
     return divcomuniBeer;
   }
 
@@ -75,5 +77,4 @@ db.collection("users").onSnapshot((querySnapshot) => {
   });
 });
  
-
-// document.querySelector('.btn-info').addEventListener('click',guardar);
+ //document.querySelector('.btn-info').addEventListener('click',guardar);

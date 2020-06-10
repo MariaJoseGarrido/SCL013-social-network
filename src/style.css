@@ -511,9 +511,25 @@ nav.main-menu li.active>a,
   margin: 15px 30px;
 }
 
-
 .emergente{
   text-align: center;
+}
+
+/*TEMPLATE CONTACTO*/
+
+.container-contacto{
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 100px;
+}
+
+label {
+  display: flex;
+}
+
+
+#contactname, #contactmail, #contactphone , #contactcity  , #contactsubject, #coment, #contactbtn{ 
+  margin: 20px;
+
 }
 
 @media (max-width: 600px) {

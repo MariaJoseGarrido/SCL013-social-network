@@ -3,7 +3,7 @@ export const menu = () => {
       <nav class="main-menu">
       <ul>
         <li>
-          <a href="#">
+          <a href="#home">
             <i class="fa fa-home"></i>
             <span class="nav-text">Inicio</span>
           </a>

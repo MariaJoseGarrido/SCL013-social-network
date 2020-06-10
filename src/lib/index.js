@@ -1,6 +1,5 @@
 export const myFunction = () => {
-  // aqui tu codigo
-  console.log('Hola mundo!');
+  console.log('hola mundo')
 };
 
 export const login = () => {

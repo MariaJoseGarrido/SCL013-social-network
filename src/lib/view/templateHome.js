@@ -8,6 +8,7 @@ export const home = () => {
   <h2 class="slogan">Tú red social cervecera</h2>
   <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
   <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
+  
   </div></div>`
 
   divHome.innerHTML = viewHome;
@@ -17,6 +18,7 @@ export const home = () => {
 //  <a href="./">ver mayoría de edad</a>
 
 export const registrarse = () => {
+  console.log("funciona");
   const divRegistrarse = document.createElement('div');
 
   const viewRegistrarse = `

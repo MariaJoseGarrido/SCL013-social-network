@@ -512,6 +512,10 @@ nav.main-menu li.active>a,
 }
 
 
+.emergente{
+  text-align: center;
+}
+
 @media (max-width: 600px) {
 #homeContent {
   width: 300px;

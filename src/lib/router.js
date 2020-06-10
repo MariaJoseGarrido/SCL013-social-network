@@ -12,7 +12,9 @@ import { comuniBeer } from './view/templateComuniBeer.js';
 import { contacto } from './view/templateContacto.js';
 
 export const changeRouter = (hash) => {
-    if (hash === '#home') {
+    if (hash === '#identificacion'){
+        return showTemplate(hash)
+    }else if (hash === '#home'){
         return showTemplate(hash)
     } else if (hash === '#cerveceriasChilenas') {
         return showTemplate(hash)
@@ -42,6 +44,9 @@ const showTemplate = (hash) => {
     containerRoot.innerHTML = menu();
 
     switch (hash) {
+        case '#identificacion':
+            containerRoot.appendChild(identification());
+            break;
         case '#home':
             containerRoot.appendChild(home());
             break;
@@ -70,7 +75,7 @@ const showTemplate = (hash) => {
             containerRoot.appendChild(comuniBeer());
             break;
         case '#contacto':
-            containerRoot.appendChild(Contacto());
+            containerRoot.appendChild(contacto());
             break;
         default:
             containerRoot.innerHTML = `<h2>No existe</h2>`

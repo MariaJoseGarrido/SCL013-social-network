@@ -8,6 +8,7 @@ import { dondebeber } from './view/templateDondeBeber.js';
 import { eventos } from './view/templateEventos.js';
 import { abastecete } from './view/templateAbastecete.js';
 import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
+import { comuniBeer } from './view/templateComuniBeer.js';
 
 export const changeRouter = (hash) => {
     if (hash === '#home') {
@@ -23,6 +24,8 @@ export const changeRouter = (hash) => {
     } else if (hash === '#iniciarsesion') {
         return showTemplate(hash)
     } else if (hash === '#registrarse') {
+        return showTemplate(hash)
+    } else if (hash === '#comunibeer') {
         return showTemplate(hash)
     } else if (hash === '#blog') {
         return showTemplate(hash)
@@ -59,6 +62,9 @@ const showTemplate = (hash) => {
             break;
         case '#iniciarsesion':
             containerRoot.appendChild(iniciarSesion());
+            break;
+        case '#comunibeer':
+            containerRoot.appendChild(comuniBeer());
             break;
         default:
             containerRoot.innerHTML = `<h2>No existe</h2>`

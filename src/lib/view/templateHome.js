@@ -2,7 +2,7 @@ export const home = () => {
   const divHome = document.createElement("div");
   const viewHome = `   
   <div id="background">
-  <div class=containerWeb Home>
+  <div class="containerWeb Home">
   <div id="homeContent">
   <hr class="lineHome">
   <h1 id="titleInicio" class="welcome">BIENVENIDO A <br> SOCIALBEER</h1>

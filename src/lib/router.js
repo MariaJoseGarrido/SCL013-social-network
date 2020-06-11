@@ -1,7 +1,7 @@
 import { identification } from './view/templateIdentificacion.js'
 import { menu } from './view/templateMenu.js';
-import { home, registrarse } from './view/templateHome.js';
-// import { registrarse } from './view/templateHome.js';
+import { home } from './view/templateHome.js';
+import { registrarse } from './view/templateRegistrarse.js';
 import { iniciarSesion } from './view/templateIniciarSesion.js';
 import { blog } from './view/templateBlog.js';
 import { dondebeber } from './view/templateDondeBeber.js';
@@ -65,9 +65,6 @@ const showTemplate = (hash) => {
         case '#blog':
             containerRoot.appendChild(blog());
             break;
-        case '#registrarse':
-            containerRoot.appendChild(registrarse());
-            break;
         case '#iniciarsesion':
             containerRoot.appendChild(iniciarSesion());
             break;
@@ -80,5 +77,15 @@ const showTemplate = (hash) => {
         default:
             containerRoot.innerHTML = `<h2>No existe</h2>`
 
+    }
+}
+
+const showTemplate = (hash) => {
+    const containerRoot = document.getElementById('root');
+    containerRoot.innerHTML = registrarse();
+    switch (hash) {
+        case '#registrarse':
+            containerRoot.appendChild(registrarse());
+            break;
     }
 }

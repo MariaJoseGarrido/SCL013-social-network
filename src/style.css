@@ -6,13 +6,31 @@ body {
 
 }
 
-#banner {
+#background {
   width: 100%;
-  height: 100px;
-  background-image: url("../src/img/bannerprueba1.png");
+  height: 100%;
+  color: #DDDDDD;
+  background-image: url("../src/img/background.png");
   background-size: cover;
   background-position: center;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
 
+#logoInicio {
+  width: 40%;
+  padding-bottom: 1px;
+}
+
+#titleInicio {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#sloganInicio {
+  font-size: 26px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
@@ -515,6 +533,10 @@ nav.main-menu li.active>a,
   text-align: center;
 }
 
+#textoC {
+  height: 90px;
+}
+
 /*TEMPLATE CONTACTO*/
 
 .container-contacto{
@@ -545,5 +567,7 @@ label {
 /*Comentarios*/
 .comments {
 margin-left: 200px;
+border-radius: 15px;
+border-color: #DDDDDD;
 }
 /*fin*/

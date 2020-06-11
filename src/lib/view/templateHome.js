@@ -1,15 +1,15 @@
 export const home = () => {
   const divHome = document.createElement("div");
   const viewHome = `   
-  <div id="banner"></div>
-  
+  <div id="background">
   <div class=containerWeb Home>
-  <div id="homeContent"><h1 class="welcome">Bienvenido a Socialbeer</h1>
-  <h2 class="slogan">Tú red social cervecera</h2>
+  <div id="homeContent"><h1 id="titleInicio" class="welcome">BIENVENIDO A <br> SOCIALBEER</h1>
+  <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
   <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
   <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
+  <div> <img id="logoInicio" src="./img/logo.png"> </div>
   
-  </div></div>`
+  </div></div></div>`
 
   divHome.innerHTML = viewHome;
   return divHome;

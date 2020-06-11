@@ -3,56 +3,42 @@ export const comuniBeer = () => {
     const viewcomuniBeer = `   
     <div id="banner"></div>
     <div class="comments">
-     <h1>Hola mundo</h1>
-        <input type="text" id="nombre" placeholder='nombre' class='form-control'></input>
-        <input type="text" id="apellido" placeholder='apellido' class='form-control'></input>
-        <input type='text' id="edad" placeholder='edad' class='form-control'></input>
-        <button class='btn-info' id='btn-comment'>Comentar!</button>
+     <h1 class="titleInicio">Crea tu reseña cervecera</h1>
+        <input type="text" id="marcaC" placeholder='Marca de tu cerveza' class='inputInicio'></input>
+        <input type="text" id="tipoC" placeholder='Tipo de tu cerveza' class='inputInicio'></input>
+        <textarea type='text' id="textoC" placeholder='Reseña de tu cerveza' class='inputInicio reseña'></textarea>
+        <button class='btnInicio' id='btn-comment'>Comentar!</button>
+        <body id='tabla'>
+        </body>
     </div>
-
-    <div>
-  <table class='table'>
-    <head>
-      <tr>
-        <th scope='col'>Id</th>
-        <th scope='col'>First</th>
-        <th scope='col'>last</th>
-        <th scope='col'>born</th>
-      </tr>
-    </head>
-    <body id='tabla'>
-    </body>
-  </table>
-</div>
     `
     divcomuniBeer.innerHTML = viewcomuniBeer;
     const botonComentario = divcomuniBeer.querySelector('#btn-comment');
-    botonComentario.addEventListener('click',guardar);
+    botonComentario.addEventListener('click', guardar);
     
     return divcomuniBeer;
   }
 
-
-    //firestore
-    var db = firebase.firestore();
+    //Inicia firestore
+    let db = firebase.firestore();
 
     //Agregar comentarios
 
     function guardar(){
-      var nombre = document.getElementById('nombre').value;
-      var apellido = document.getElementById('apellido').value;
-      var edad = document.getElementById('edad').value;
+      let marcaC = document.getElementById('marcaC').value;
+      let tipoC = document.getElementById('tipoC').value;
+      let textoC = document.getElementById('textoC').value;
 
-    db.collection("users").add({
-        first: nombre,
-        last: apellido,
-        born: edad
+    db.collection("reseñas").add({
+        marcaCerveza: marcaC,
+        tipoCerveza: tipoC,
+        textoReseña: textoC
     })
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
-        document.getElementById('nombre').value='';
-        document.getElementById('apellido').value='';
-        document.getElementById('edad').value='';
+        document.getElementById('marcaC').value='';
+        document.getElementById('tipoC').value='';
+        document.getElementById('textoC').value='';
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -60,21 +46,20 @@ export const comuniBeer = () => {
   }
 
 //leer doc
-  var tabla= document.getElementById('tabla');
-db.collection("users").onSnapshot((querySnapshot) => {
-  tabla.innerHTML='';
+  let table = document.getElementById('table');
+  db.collection("reseñas").onSnapshot((querySnapshot) => {
+  table.innerHTML='';
   querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
-      console.log(`${doc.id} => ${doc.data().first}`);
-      tabla.innerHTML += `
+      console.log(`${doc.id} => ${doc.data().marcaCerveza}`);
+      table.innerHTML += `
       <tr>
       <th scope='row'>${doc.id}</th>
-      <th>${doc.data().first}</th>
-      <th>${doc.data().last}</th>
-      <th>${doc.data().born}</th>
+      <th>${doc.data().marcaCerveza}</th>
+      <th>${doc.data().tipoCerveza}</th>
+      <th>${doc.data().textoReseña}</th>
       </tr>
       `
-
-  });
+  } );
 });
  
  //document.querySelector('.btn-info').addEventListener('click',guardar);

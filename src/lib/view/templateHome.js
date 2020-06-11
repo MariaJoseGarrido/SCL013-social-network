@@ -8,6 +8,7 @@ export const home = () => {
   <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
   <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
   <div> <img id="logoInicio" src="./img/logo.png"> </div>
+  <div> <img id="logoMapa" src="./img/mapa.png"> </div>
   
   </div></div></div>`
 

@@ -25,28 +25,28 @@ export const contacto = () => {
 
             <div id="contactname">
                 <label for="name">Nombre Completo:<span class="textForm"></span></label>
-                <input type="text" name="name" id="nombre" class="" placeholder="Nombre Completo">
+                <input type="text" name="name" id="nombre" class="textDatos" placeholder="Nombre y apellido" required>
             </div>
 
             <div id="contactmail">
                 <label for="email">Dirección de Correo Electrónico:<span class="textForm"></span></label>
-                <input type="text" name="email" id="email" class="" placeholder="ej: mail@mail.com">
+                <input type="text" name="email" id="email" class="textDatos" placeholder="ej: mail@mail.com" required> 
             </div>
 
             <div id="contactphone">
                 <label for="phone">Teléfono:<span class="textForm"></span></label>
-                <input type="tel" name="phone" id="phone" class="" placeholder=" 56 9 222 22 222">
+                <input type="tel" name="phone" id="phone" class="textDatos" placeholder=" 56 9 222 22 222">
             </div>
 
 
             <div id="contactcity">
                 <label for="ciudad">Ciudad<span class="textForm"></span>:</label>
-                <input type="text" name="ciudad" id="ciudad" class="" placeholder="Ej: Santiago" required>
+                <input type="text" name="ciudad" id="ciudad" class="textDatos" placeholder="Ej: Santiago" required>
             </div>
 
             <div id="contactsubject">
                 <label for="asunto">Asunto<span class="textForm"></span>:</label>
-                <input type="text" name="asunto" id="asunto" class="" placeholder="Ingrese su asunto" required>
+                <input type="text" name="asunto" id="asunto" class="textDatos" placeholder="Ej: Eventos" required>
             </div>
 
             <div id="contactAsk">
@@ -54,7 +54,7 @@ export const contacto = () => {
                 <div id ="coment">
 
                     <label for="coment">Consulta:<span class="textForm"></span></label>
-                    <textarea name="coment" id="coment" cols="50" rows="5"></textarea>
+                    <textarea name="coment" id="coment"></textarea>
 
                 </div>
 

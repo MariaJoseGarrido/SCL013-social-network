@@ -537,6 +537,19 @@ nav.main-menu li.active>a,
   height: 90px;
 }
 
+.lineHome{
+  width:400px;
+}
+
+.containerWeb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
 /*TEMPLATE CONTACTO*/
 
 .container-contacto{

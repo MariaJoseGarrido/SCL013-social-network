@@ -34,7 +34,7 @@ export const iniciarSesion = () => {
   </form> 
   <div class="hello">
     <h1>¡Hola!</h1>
-    <img id="logoInicio" src="./img/logo.png" alt="Logo SocialBeer">
+    <img id="logoIniciar" src="./img/logo.png" alt="Logo SocialBeer">
     <p id="welcomeText">!Ingresa tus datos para unirte a la comunidad más cervecera!</p>
     <button class="btnInicio" id=#register>Registrarse</button>
   </div></>`

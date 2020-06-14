@@ -37,12 +37,12 @@ export const blog = () => {
 
     <article class="entrance1">
      <header>
-     <h2>Título de mi primer post</h2>
-     <time datetime="2014-10-01">Hace 1 semana</time>
+     <h2>La cerveza: sinónimo de felicidad</h2>
+     <time datetime="2020-02-17">Hace 4 meses</time>
      </header>
-     <p>Un post...</p>
+     <p>Tomarse una cerveza no deja de ser una opción perfecta para experimentar grandes sensaciones. Sin embargo, incluso si eres un fanático de esta bebida, quizá ignores por qué cada sorbo te genera tan positivas sensaciones...</p>
      <a href="#post1">Leer más...</a>
-     <footer>Escrito por La Kathy</footer>
+     <footer>Escrito por Katherine</footer>
     </article>
     </section>
   

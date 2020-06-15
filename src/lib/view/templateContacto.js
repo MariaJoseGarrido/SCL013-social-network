@@ -54,7 +54,7 @@ export const contacto = () => {
                 <div id ="coment">
 
                     <label for="coment">Consulta:<span class="textForm"></span></label>
-                    <textarea name="coment" id="coment"></textarea>
+                    <input name="coment" id="coment" class="inputInicio"></input>
 
                 </div>
 

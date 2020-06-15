@@ -1,3 +1,7 @@
+// import { registrarse } from './templateRegistrarse';
+import { login } from '../index.js';
+import { register } from './register.js';
+
 /* import { login } from '../index.js'
 
 export const iniciarSesion = () => {
@@ -10,10 +14,6 @@ export const iniciarSesion = () => {
     btn.addEventListener('click', () => { login() })
   return divIniciarsesion;
 }; */
-
-import {
-  login
-} from '../index.js'
 
 export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');
@@ -32,19 +32,44 @@ export const iniciarSesion = () => {
     <a id="forgetPassword" href="#">¿olvidaste tu contraseña?</a>
     <button class="btnInicio" id='btnEntrar'>Entrar</button>
   </form> 
-  <div class="hello">
-    <h1>¡Hola!</h1>
-    <img id="logoIniciar" src="./img/logo.png" alt="Logo SocialBeer">
-    <p id="welcomeText">!Ingresa tus datos para unirte a la comunidad más cervecera!</p>
-    <button class="btnInicio" id=#register>Registrarse</button>
-  </div></>`
 
+  <div class="hello">
+  <form class="formInicio" action="#">
+  <h1 class='titleInicio'>Registrarse</h1>
+  <div class='social-container'>
+  <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
+  <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
+  </div>
+  <span></span>
+  <input id="emailRegistar" class="inputInicio" type="email" placeholder="Email" />
+  <input id="contrasenaRegistrar" class="inputInicio" type="password" placeholder="Contraseña" />
+  <button class="btnInicio" id='registrarUsuario'>Registrarse</button>
+  </form> 
+
+  </div>
+  
+  </div>
+`
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
   const btn = divIniciarsesion.querySelector('#google');
   btn.addEventListener('click', () => {
     login()
   })
+
+ /*  divIniciarsesion.innerHTML = viewIniciarsesion;
+  const btnUserPassword = viewIniciarsesion.querySelector('#registrarUsuario');
+  btnUserPassword.addEventListener('click', () => { 
+    const email = viewIniciarsesion.querySelector('#emailRegistrar').value;
+    const password = viewIniciarsesion.querySelector('#contrasenaRegistrar').value;
+    register(email, password)
+  })
+
+  const btnvistaRegistrarse = viewIniciarsesion.querySelector('#registrarUsuario');
+  btnvistaRegistrarse.addEventListener('click', () => { 
+    registrarse();
+  })  */
+
   return divIniciarsesion;
 };
 

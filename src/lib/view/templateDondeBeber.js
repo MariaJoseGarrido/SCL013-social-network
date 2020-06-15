@@ -14,19 +14,22 @@ export const dondebeber = () => {
     
     <div class="iconografiaMap">
       <img class="iconMap" src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1879-stein-beer_4x.png&highlight=ff000000,0288D1&scale=2.0">
-      </img>Botilleria
+      </img>
+      <span>Botilleria</span>
     </div>
    
       <div class="iconografiaMap">
       <img class="iconMap" src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1879-stein-beer_4x.png&highlight=ff000000,E65100&scale=2.0">
-      </img>Bares
+      </img>
+      <span>Bares</span>
     </div>
 
       <div class="iconografiaMap">
       <img class="iconMap" src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-container-bg_4x.png,icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1879-stein-beer_4x.png&highlight=ff000000,F9A825&scale=2.0">
-      </img>Escuelas
+      </img>
+      <span>Escuelas</span>
     </div>
-    
+
     </div>
 
     </div>

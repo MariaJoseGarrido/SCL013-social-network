@@ -12,14 +12,9 @@ export const identification = () => {
 
   </div> 
 `
-
-  divIdentification.innerHTML = viewIdentification;
-  return divIdentification;
-}
-
-window.onload = initEdad;
+window.onload = initEdad();
     function initEdad(){
-        document.getElementById("#identificacion .menor").addEventListener("click",menorEdad);
+        document.getElementById("#/identificacion .menor").addEventListener("click",menorEdad);
         document.querySelector(".emergente .mayor").addEventListener("click",mayorEdad);
         document.querySelector(".main-menu").style.display="none";
     }
@@ -32,3 +27,8 @@ window.onload = initEdad;
         document.getElementById("#identificacion").style.display="none";
         document.querySelector(".main-menu").style.display="block";
     }
+
+  divIdentification.innerHTML = viewIdentification;
+  return divIdentification;
+
+}

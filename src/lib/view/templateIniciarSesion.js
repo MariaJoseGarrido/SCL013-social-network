@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import { registrarse } from './templateRegistrarse';
 import { login } from '../index.js';
 import { register } from './register.js';
@@ -16,6 +17,11 @@ export const iniciarSesion = () => {
   return divIniciarsesion;
 }; */
 =======
+=======
+
+=======
+>>>>>>> aedaa0e5a80e509a6da35765599eb1c172aa890c
+>>>>>>> 45af2e54378aa23156bb18f37eb0cd55bce8dcd2
 import {
   login
 } from '../index.js'

@@ -1,0 +1,856 @@
+/* Ordenar CSS */
+/* Documento */
+body {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+  font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* galería evento */
+
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+  width: 80%;
+  margin-left: 160px;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #428bca;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/* fin galería evento */
+
+/* Home */
+#background {
+  width: 100%;
+  height: 100%;
+  color: #DDDDDD;
+  background-image: url("../src/img/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#logoIniciar {
+  width: 45%;
+  padding-bottom: 1px;
+}
+
+#logoHome {
+  width: 25%;
+}
+
+.containerWeb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  width: 65%;
+}
+
+#homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.lineHome{
+  width: 60%;
+  margin: 10px;
+}
+
+/* fin Home */
+
+/* Blog */
+#containerViewBlog {
+  padding-left: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logoBanner {
+  width: 15%;
+  min-width: 80px;
+  padding-bottom: 1px;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+}
+
+.imgEntrance {
+  max-width: 100%;
+  display: block;
+}
+
+#entranceContainer {
+padding: 0 20px;
+}
+
+/* fin blog */
+
+#titleInicio {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#sloganInicio {
+  font-size: 26px;
+}
+
+#icono {
+  height: 50%;
+  width: 50%;
+  display: block;
+  position: absolute;
+}
+
+/* Barra Lateral */
+.far,
+.fas,
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 55px;
+  height: 36px;
+  text-align: center;
+  top: 12px;
+  font-size: 20px;
+  padding-bottom: 0.8em;
+}
+
+.main-menu:hover,
+nav.main-menu.expanded {
+  width: 250px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.main-menu {
+  background: #f7f7f7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 55px;
+  overflow: hidden;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+  opacity: 1;
+  z-index: 99;
+}
+
+.main-menu>ul {
+  margin: 7px 0;
+}
+
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.main-menu li>a {
+  position: relative;
+  width: 255px;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #8a8a8a;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-transition: all 0.14s linear;
+  transition: all 0.14s linear;
+  font-family: "Strait", sans-serif;
+  border-top: 1px solid #f2f2f2;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.main-menu .nav-icon {
+  position: relative;
+  display: table-cell;
+  width: 55px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main-menu>ul.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  border-left: 0px solid #f7f7f7;
+}
+
+nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* elementos más osucuro */
+
+.darkerli {
+  background-color: #ededed;
+  text-transform: capitalize;
+}
+
+.darkerlishadow {
+  background-color: #ededed;
+  text-transform: capitalize;
+  -webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+  box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+.darkerlishadowdown {
+  background-color: #ededed;
+  text-transform: capitalize;
+  -webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+  box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+  color: #fff;
+  background-color: goldenrod;
+  text-shadow: 0px 0px 0px;
+}
+
+/* fin */
+
+.area {
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
+}
+
+/* Vista articulos */
+.article-card {
+  height: 20rem;
+  float: left;
+  position: relative;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  border-radius: 0.375rem;
+  margin-bottom: 2rem;
+  background: #f7a62d;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.22);
+}
+.article-card:last-child {
+  margin-right: 0;
+}
+.article-card:nth-child(2n) {
+  margin-right: 0;
+}
+.article-card:nth-child(2n + 1) {
+  clear: left;
+}
+.article-card a {
+  width: inherit;
+  color: inherit;
+}
+.article-card .article-info {
+  position: absolute;
+  bottom: 0;
+  background: #444;
+  width: 100%;
+  color: #fff;
+  border-radius: 0.375rem;
+  background: -moz-linear-gradient(top, rgba(34, 34, 34, 0) 0%, #222222 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(34, 34, 34, 0)),
+    color-stop(100%, #222222)
+  );
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(34, 34, 34, 0) 0%,
+    #222222 100%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(34, 34, 34, 0) 0%, #222222 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(34, 34, 34, 0) 0%, #222222 100%);
+  /* IE10+ */
+  background: linear, to bottom, rgba(34, 34, 34, 0) 0%, #222222 100%;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00222222', endColorstr='#222222',GradientType=0 );
+  /* IE6-9 */
+}
+.article-card .article-info h2 {
+  color: #fff;
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+.byline {
+  padding: 1em;
+  margin: 0;
+}
+
+.article-card img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 0.375rem;
+  transition-duration: 0.35s;
+}
+@media screen and (max-width: 500px) {
+  .article-card {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+  .article-card:last-child {
+    margin-right: 0;
+  }
+}
+.article-card:hover {
+  box-shadow: 0px 2px 10px 0px #999999;
+}
+.article-card:hover img {
+  opacity: 0.2;
+}
+.article-card:hover .article-info {
+  background: none;
+}
+
+h2 {
+  font-size: 2rem;
+}
+/* Fin Vista articulos */
+
+.logo {
+  height: 50px;
+  display: block;
+  position: absolute;
+  background: #f7f7f7;
+}
+
+.logo:hover a {
+  background: #f7f7f7 !important;
+}
+
+
+.shopOnline {
+  align-items: center;
+}
+
+#canceled {
+  display: flex;
+  justify-content: center;
+}
+
+#canceled img {
+  margin-top: 35px;
+  width: 30%;
+  height: 30%;
+
+}
+
+#ingresar img {
+  width: 30%;
+}
+
+/*Sección cervecerías chilenas*/
+.webbeer {
+  font-family: "Titillium Web";
+  text-align: center;
+  padding: 0 80px;
+}
+
+.webbeer-content {
+  float: left;
+}
+
+.webbeer-content-logo {
+  height: 200px;
+  display: inline-block;
+  width: 200px;
+  border: solid 5px lightgray;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/*fin*/
+
+
+/*shop online*/
+.shopOnline {
+  padding: 50px 100px;
+  align-items: center;
+}
+
+.shopOnline-card {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 240px;
+}
+
+.shopOnline-card-img {
+  width: 33%;
+}
+
+.shopOnline-card-img-content {
+  width: 200px;
+  height: 200px;
+  border: solid 5px lightgray;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+
+.shopOnline-card-text {
+  width: 66%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.shopOnline-card-text p {
+  display: inline-block;
+}
+
+.shopOnline-card {
+  margin-top: 15px;
+}
+
+/*fin*/
+
+.map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+/* iniciar sesión */
+
+.titleInicio {
+  font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+	margin: 0;
+}
+
+.inputInicio {
+	background-color: rgb(224, 224, 224);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+  width: 60%;
+}
+.inputInicio:focus {
+  outline: 0.2px solid rgb(110, 110, 110);
+}
+
+#forgetPassword {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+#forgetPassword:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#btn-coomment {
+  display: flex;
+}
+
+.btnInicio {
+  cursor: pointer;
+	border-radius: 20px;
+	border: 0.5px darkorange;
+  background-color: #f7a62d;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
+  0 1px 1px rgba(0,0,0,0.2);
+	font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btnInicio:active {
+  transform: scale(0.95);
+}
+
+.btnInicio:focus {
+  outline: none;
+}
+
+.btnInicio:hover {
+  background-color: #d88417;
+  transition: 0.3s;
+}
+
+.social-container {
+	margin: 20px;
+}
+
+.social:focus {
+	outline: none;
+}
+
+/* .social:hover {
+  background-color: rgb(168, 168, 168);
+  transition: 0.3s;
+} */
+
+.social-container button {
+  cursor: pointer;
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+  align-items: center;
+	margin: 0 5px;
+	height: 50px;
+	width: 50px;
+}
+
+#google:hover {
+  background-color: #BA3B2C;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+#facebook:hover {
+  background-color: #4064AD;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+.sign-in-container {
+  background-color: rgb(177, 177, 177);
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	font-family: "Titillium Web", sans-serif;
+  height: 100%;
+  width: 55%;
+  margin: 80px 40px 80px 300px;
+}
+
+.formInicio{
+	background-color: #fcfcfc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  width: 380px;
+  text-align: center;
+}
+
+.hello {
+  background: rgba(247,247,247,1);
+  background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,247,247,1)), color-stop(3%, rgba(247,247,247,1)), color-stop(31%, rgba(255,232,138,1)), color-stop(100%, rgba(247,166,45,1)));
+  background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
+  background: -o-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
+  background: -ms-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
+  background: linear-gradient(to bottom, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 3%, rgba(255,232,138,1) 31%, rgba(247,166,45,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7a62d', GradientType=0 );
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  width: 380px;
+  text-align: center;
+}
+
+#textoC {
+  height: 90px;
+}
+
+#welcomeText {
+  margin: 15px 30px;
+  font-weight: 400;
+}
+
+.emergente{
+  text-align: center;
+}
+
+/*TEMPLATE CONTACTO*/
+
+.container-contacto{
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 100px;
+}
+
+label {
+  display: flex;
+}
+
+#contactname, #contactmail, #contactphone , #contactcity  , #contactsubject, #coment, #contactbtn{ 
+  margin: 20px;
+
+}
+
+@media (max-width: 600px) {
+#homeContent {
+  width: 300px;
+  display: flex;
+  margin-left: 60px;
+  text-align: center;
+}
+
+}
+
+/*Reseñas*/
+.comments {
+width: 55%;
+height: 55%;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.textComments {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*fin*/
+
+#footerWeb{
+  padding-left: 100px;
+  color: #8a8a8a;
+}
+
+/* Estrellas */
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los 'a') */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: goldenrod;
+}
+/* El selector de hijo, es necesario para aumentar la especifidad */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+/* Fin Estrellas */

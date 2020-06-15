@@ -83,16 +83,6 @@ export const menu = () => {
           </a>
         </li>
         </section>
-
-      </ul>
-      </section>
-        <li>
-        <a href="#/ayuda">
-          <i class="fa fa-question-circle"></i>
-          <span class="nav-text">Ayuda</span>
-        </a>
-        </li>
-      </section>  
   </nav>
   `
 

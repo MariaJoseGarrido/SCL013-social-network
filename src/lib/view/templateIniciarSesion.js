@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { registrarse } from './templateRegistrarse';
 import { login } from '../index.js';
 import { register } from './register.js';
@@ -14,6 +15,11 @@ export const iniciarSesion = () => {
     btn.addEventListener('click', () => { login() })
   return divIniciarsesion;
 }; */
+=======
+import {
+  login
+} from '../index.js'
+>>>>>>> aedaa0e5a80e509a6da35765599eb1c172aa890c
 
 export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');
@@ -35,21 +41,18 @@ export const iniciarSesion = () => {
 
   <div class="hello">
   <form class="formInicio" action="#">
-  <h1 class='titleInicio'>Registrarse</h1>
+  <h1 class='titleInicio'>Crear una cuenta</h1>
   <div class='social-container'>
   <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
   <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
   </div>
   <span></span>
-  <input id="emailRegistar" class="inputInicio" type="email" placeholder="Email" />
-  <input id="contrasenaRegistrar" class="inputInicio" type="password" placeholder="Contraseña" />
-  <button class="btnInicio" id='registrarUsuario'>Registrarse</button>
-  </form> 
+  <input class="inputInicio" type="email" placeholder="Email" />
+  <input class="inputInicio" type="password" placeholder="Contraseña" />
+  <button class="btnInicio" id='btnRegistrarse'>Registrarse</button>
+</form> 
+  </div></div>`
 
-  </div>
-  
-  </div>
-`
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
   const btn = divIniciarsesion.querySelector('#google');

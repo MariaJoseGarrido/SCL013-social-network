@@ -1,7 +1,8 @@
 export const dondebeber = () => {
   const divDondebeber = document.createElement("div");
   const viewDondebeber = `   
-  <div id="banner"></div>
+  <div id="banner">
+  <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer"></div>
 
   <div class="contentMap">
   <div class="map"> 
@@ -37,6 +38,7 @@ export const dondebeber = () => {
 
   </div>
   </div>
+  <footer id="footerWeb">Hecho por Francista, Maria José y Katherine</footer>
 `
   divDondebeber.innerHTML = viewDondebeber;
 

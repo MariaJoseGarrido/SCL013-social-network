@@ -5,17 +5,15 @@ export const home = () => {
   <div class=containerWeb Home>
   <div id="homeContent">
   <hr class="lineHome">
-  <h1 id="titleInicio" class="welcome">BIENVENIDO A <br> SOCIALBEER</h1>
+  <h1 id="titleInicio" class="welcome">BIENVENIDO A SOCIALBEER</h1>
+  <div id="imgLogoHome" class="d-flex justify-content-center"> 
+  <img id="logoHome" src="./img/logo.png"> 
+  </div>
   <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
   <hr class="lineHome">
   <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
   <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
   </div>
-  <div class="imgLogoHome"> 
-  <img id="logoInicio" src="./img/logo.png"> 
-  </div>
-  
-  
   </div>`
 
   divHome.innerHTML = viewHome;

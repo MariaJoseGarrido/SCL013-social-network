@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> aedaa0e5a80e509a6da35765599eb1c172aa890c
 import {
   login
 } from '../index.js'
@@ -21,11 +24,18 @@ export const iniciarSesion = () => {
     <button class="btnInicio" id='btnEntrar'>Entrar</button>
   </form> 
   <div class="hello">
-    <h1>¡Hola!</h1>
-    <img id="logoIniciar" src="./img/logo.png" alt="Logo SocialBeer">
-    <p id="welcomeText">!Ingresa tus datos para unirte a la comunidad más cervecera!</p>
-    <button class="btnInicio" id=#register>Registrarse</button>
-  </div></>`
+  <form class="formInicio" action="#">
+  <h1 class='titleInicio'>Crear una cuenta</h1>
+  <div class='social-container'>
+  <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
+  <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
+  </div>
+  <span></span>
+  <input class="inputInicio" type="email" placeholder="Email" />
+  <input class="inputInicio" type="password" placeholder="Contraseña" />
+  <button class="btnInicio" id='btnRegistrarse'>Registrarse</button>
+</form> 
+  </div></div>`
 
 
   divIniciarsesion.innerHTML = viewIniciarsesion;

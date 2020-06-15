@@ -1,7 +1,6 @@
 import { identification } from './view/templateIdentificacion.js'
 import { menu } from './view/templateMenu.js';
-import { home, registrarse } from './view/templateHome.js';
-// import { registrarse } from './view/templateHome.js';
+import { home } from './view/templateHome.js';
 import { iniciarSesion } from './view/templateIniciarSesion.js';
 import { blog } from './view/templateBlog.js';
 import { dondebeber } from './view/templateDondeBeber.js';

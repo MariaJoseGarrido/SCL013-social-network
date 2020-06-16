@@ -1,25 +1,6 @@
-<<<<<<< HEAD
-// import { registrarse } from './templateRegistrarse';
-import { login } from '../index.js';
-import { register } from './register.js';
-
-/* import { login } from '../index.js'
-
-export const iniciarSesion = () => {
-  const divIniciarsesion = document.createElement('div');
-
-  const viewIniciarsesion = `<button id='google'>Ingresar con Google</button>`
-
-  divIniciarsesion.innerHTML = viewIniciarsesion;
-  const btn = divIniciarsesion.querySelector('#google');
-    btn.addEventListener('click', () => { login() })
-  return divIniciarsesion;
-}; */
-=======
 import {
   login
 } from '../index.js'
->>>>>>> 957b935a62cf75aaa64f954a4ae625ff2cc7a23c
 
 export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');

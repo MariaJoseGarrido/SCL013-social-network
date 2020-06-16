@@ -1,3 +1,6 @@
+import  login  from '../index.js';
+import { register } from './register.js';
+
 export const registrarse = () => {
   console.log("funciona");
   const divRegistrarse = document.createElement('div');
@@ -11,16 +14,23 @@ export const registrarse = () => {
     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
   </div>
-  <input type="text" placeholder="Name" />
-  <input type="email" placeholder="Email" />
-  <input type="password" placeholder="Contraseña" />
-  <button>¡Unirse!</button>
+
+  <input id="emailRegistar" type="email" placeholder="Email" />
+  <input id="contrasenaRegistrar" type="password" placeholder="Contraseña" />
+  <button id="registrarUsuario">¡Unirse!</button>
   </form>
   </div>
-  </div >`
+  </div>`
 
 
   divRegistrarse.innerHTML = viewRegistrarse;
+  const btnUserPassword = viewRegistrarse.querySelector('#registrarUsuario');
+  btnUserPassword.addEventListener('click', () => { 
+    const email = viewRegistrarse.querySelector('#emailRegistrar').value;
+    const password = viewRegistrarse.querySelector('#contrasenaRegistrar').value;
+    register(email, password)
+  })
+
   const btn = divRegistrarse.querySelector('#registrarse');
   btn.addEventListener('click', () => {
     login()

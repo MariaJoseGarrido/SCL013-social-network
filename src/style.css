@@ -611,14 +611,6 @@ h2 {
 
 /*fin*/
 
-.map {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-}
-
 /* iniciar sesión */
 
 .titleInicio {
@@ -792,6 +784,33 @@ label {
   margin: 20px;
 
 }
+
+/*Template Mapa*/
+
+.map {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.contentMap {
+  background: #f5ebeb;
+  border: 2px solid;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+img.iconMap {
+  width: 40px;
+}
+
+
+/*fin template mapa*/ 
 
 @media (max-width: 600px) {
 #homeContent {

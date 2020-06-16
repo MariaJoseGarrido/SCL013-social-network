@@ -3,21 +3,21 @@ export const menu = () => {
       <nav class="main-menu">
       <ul>
         <li>
-          <a href="#home">
+          <a href="#/home">
             <i class="fa fa-home"></i>
             <span class="nav-text">Inicio</span>
           </a>
         </li>
 
         <li>
-          <a href="#iniciarsesion">
+          <a href="#/iniciarsesion">
             <i class="fa fa-user"></i>
             <span class="nav-text">Iniciar Sesión</span>
           </a>
         </li>
 
         <li>
-          <a href="#contacto">
+          <a href="#/contacto">
             <i class="fa fa-envelope-o"></i>
             <span class="nav-text">Contacto</span>
           </a>
@@ -31,7 +31,7 @@ export const menu = () => {
         <section>
           </li>
           <li class="darkerlishadow">
-            <a href="#blog">
+            <a href="#/blog">
               <i class="far fa-newspaper"></i>
               <span class="nav-text">Blog</span>
             </a>
@@ -40,7 +40,7 @@ export const menu = () => {
 
         <section>
           <li class="darkerli">
-            <a href="#comunibeer">
+            <a href="#/comunibeer">
               <i class="fas fa-people-carry"></i>
               <span class="nav-text">Comunibeer</span>
             </a>
@@ -49,7 +49,7 @@ export const menu = () => {
 
       <section>
           <li class="darkerli">
-          <a href="#dondebeber">
+          <a href="#/dondebeber">
             <i class="fas fa-map-marked-alt"></i>
             <span class="nav-text">¿Dónde beber?</span>
           </a>
@@ -58,7 +58,7 @@ export const menu = () => {
 
       <section>
         <li class="darkerli">
-          <a href="#eventos">
+          <a href="#/eventos">
             <i class="far fa-calendar-alt"></i>
             <span class="nav-text">Eventos</span>
           </a>
@@ -67,7 +67,7 @@ export const menu = () => {
 
       <section>
         <li class="darkerli">
-          <a href="#abastecete">
+          <a href="#/abastecete">
             <i class="fa fa-shopping-cart"></i>
             <span class="nav-text">¡Abastécete!</span>
           </a>
@@ -77,7 +77,7 @@ export const menu = () => {
 
         <section>
         <li class="darkerli">
-          <a href="#cerveceriasChilenas">
+          <a href="#/cerveceriasChilenas">
             <i class="fas fa-beer"></i>
             <span class="nav-text">Cervecerías Chilenas</span>
           </a>

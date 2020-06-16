@@ -593,6 +593,7 @@ h2 {
   overflow: hidden;
   display: inline-block;
   float: left;
+  background-color: white;
 }
 
 .shopOnline-card-text {
@@ -607,6 +608,7 @@ h2 {
 
 .shopOnline-card {
   margin-top: 15px;
+  background-color: whitesmoke;
 }
 
 /*fin*/
@@ -852,5 +854,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .ec-stars-wrapper > a:hover ~ a {
 	color: #888;
 }
-
 /* Fin Estrellas */
+
+.backgroundcolor{
+  background: linear-gradient(180deg, rgba(253,218,0,1) 60%, rgba(249,249,249,1) 100%);;
+}

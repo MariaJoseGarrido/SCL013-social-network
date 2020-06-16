@@ -1,7 +1,8 @@
 export const abastecete = () => {
     const divAbastecete = document.createElement("div");
-  
+    divAbastecete.className="backgroundcolor";
     const viewAbastecete = `
+   
       <div id="banner">
       <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
       </div>
@@ -221,6 +222,7 @@ export const abastecete = () => {
       </div>
       </section>
       <footer id="footerWeb">Hecho por Francista, Maria José y Katherine</footer>
+    
       `;
   
     divAbastecete.innerHTML = viewAbastecete;

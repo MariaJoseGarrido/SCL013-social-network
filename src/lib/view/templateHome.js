@@ -14,17 +14,16 @@ export const home = () => {
   <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
   <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
   </div>
-  </div>`
+  </div>
+  <div> <img id="logoMapa" src="./img/mapa.png">
+  </div> 
+  `
 
   divHome.innerHTML = viewHome;
   return divHome;
 }
 
-// </div>
-//   <div> <img id="logoMapa" src="./img/mapa.png">
-//   </div> 
 
-//  <a href="./">ver mayoría de edad</a>
 
 export const registrarse = () => {
   console.log("funciona");

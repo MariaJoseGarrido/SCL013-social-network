@@ -8,15 +8,15 @@ const viewEventos = `
     <div class="carousel-inner">
       <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
       <div class="carousel-item">
-        <img src="../src/img/prueba(borrar)/prueba1.png" alt="">
+        <img src="../src/img/eventos.png" alt="">
       </div>
       <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
       <div class="carousel-item">
-        <img src="../src/img/prueba(borrar)/prueba2.png" alt="">
+        <img src="../src/img/cata.png" alt=""> <href="https://www.google.cl/">
       </div>
       <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
       <div class="carousel-item">
-        <img src="../src/img/prueba(borrar)/prueba3.png" alt="">
+        <img src="../src/img/aprendamos.png" alt="">
       </div>
       <label for="carousel-3" class="carousel-control prev control-1">‹</label>
       <label for="carousel-2" class="carousel-control next control-1">›</label>

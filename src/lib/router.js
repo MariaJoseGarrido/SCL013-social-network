@@ -1,4 +1,4 @@
-import { identification } from './view/templateIdentificacion.js';
+import { identification } from './view/templateIdentificacion.js'
 import { menu } from './view/templateMenu.js';
 import { home } from './view/templateHome.js';
 import { iniciarSesion } from './view/templateIniciarSesion.js';
@@ -10,39 +10,70 @@ import { cerveceriasChilenas } from './view/templateCerveceriaschilenas.js';
 import { comuniBeer } from './view/templateComuniBeer.js';
 import { contacto } from './view/templateContacto.js';
 
+export const changeRouter = (hash) => {
+    if (hash === '#identificacion'){
+        return showTemplate(hash)
+    }else if (hash === '#home'){
+        return showTemplate(hash)
+    } else if (hash === '#cerveceriasChilenas') {
+        return showTemplate(hash)
+    } else if (hash === '#eventos') {
+        return showTemplate(hash)
+    } else if (hash === '#abastecete') {
+        return showTemplate(hash)
+    } else if (hash === '#dondebeber') {
+        return showTemplate(hash)
+    } else if (hash === '#iniciarsesion') {
+        return showTemplate(hash)
+    } else if (hash === '#registrarse') {
+        return showTemplate(hash)
+    } else if (hash === '#comunibeer') {
+        return showTemplate(hash)
+    } else if (hash === '#blog') {
+        return showTemplate(hash)
+    } else if (hash === '#contacto'){
+        return showTemplate(hash)
+    }else {
+        return showTemplate(hash)
+    }
+}
+
 const showTemplate = (hash) => {
     const containerRoot = document.getElementById('root');
     containerRoot.innerHTML = menu();
 
     switch (hash) {
-        case '#/':
+        case '#identificacion':
             containerRoot.appendChild(identification());
             break;
-        case '#/home':
+        case '#home':
             containerRoot.appendChild(home());
             break;
-        case '#/cerveceriasChilenas':
+        case '#cerveceriasChilenas':
             containerRoot.appendChild(cerveceriasChilenas());
             break;
-        case '#/abastecete':
+        case '#abastecete':
             containerRoot.appendChild(abastecete());
             break;
-        case '#/eventos':
+        case '#eventos':
             containerRoot.appendChild(eventos());
             break;
-        case '#/dondebeber':
+        case '#dondebeber':
             containerRoot.appendChild(dondebeber());
             break;
-        case '#/blog':
+        case '#blog':
             containerRoot.appendChild(blog());
             break;
-        case '#/iniciarsesion':
+        case '#registrarse':
+            containerRoot.appendChild(registrarse());
+            break;
+        case '#iniciarsesion':
             containerRoot.appendChild(iniciarSesion());
             break;
-        case '#/comunibeer':
+        case '#comunibeer':
             containerRoot.appendChild(comuniBeer());
             break;
-        case '#/contacto':
+        case '#contacto':
             containerRoot.appendChild(contacto());
             break;
         default:
@@ -50,30 +81,3 @@ const showTemplate = (hash) => {
 
     }
 }
-
-export const changeRouter = (hash) => {
-    if (hash === '#/'){
-        return showTemplate(hash)
-    }else if (hash === '#/home'){
-        return showTemplate(hash)
-    } else if (hash === '#/cerveceriasChilenas') {
-        return showTemplate(hash)
-    } else if (hash === '#/eventos') {
-        return showTemplate(hash)
-    } else if (hash === '#/abastecete') {
-        return showTemplate(hash)
-    } else if (hash === '#/dondebeber') {
-        return showTemplate(hash)
-    } else if (hash === '#/iniciarsesion') {
-        return showTemplate(hash)
-    } else if (hash === '#/comunibeer') {
-        return showTemplate(hash)
-    } else if (hash === '#/blog') {
-        return showTemplate(hash)
-    } else if (hash === '#/contacto'){
-        return showTemplate(hash)
-    }else {
-        return showTemplate(hash)
-    }
-}
-

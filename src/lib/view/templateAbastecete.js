@@ -16,10 +16,13 @@ export const abastecete = () => {
           </div>
           </div>
           <div class="shopOnline-card-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+          <p>Tienda especializada que cuenta con la más amplia variedad de cervezas artesanales en todo Chile. 
+          Desde las mejores cervezas artesanales nacionales hasta las más exclusivas importadass de Estados Unidos y 
+          Europa que no encontrarás en otro lado. Fundada en el 2013 por dos gringos, Ben Wood y Perry Hirsch, 
+          quienes solo deseaban poder tomar las mejores cervezas artesanales de su tierra natal, 
+          Beervana se ha convertido en el punto de referencia para el mundo cervecero chileno. 
+          En su local puedes comprar cervezas para beber ahí mismo, comprar para llevar, pedir en línea con retiro 
+          en entienda, o con despacho a domicilio.</p>
           </div>
       </div>
   
@@ -33,10 +36,11 @@ export const abastecete = () => {
               </div>
           </div>
           <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+              <p>Casa de la Cerveza nace el año 2017 como una tienda online, parte de la cervecera multinacional ABInBev, 
+              con el sueño de ofrecer al mercado chileno las mejores cervezas del mundo, a un precio justo y de la manera más 
+              conveniente. Para cumplirlo, se formaron acuerdos con las cervecerías más famosas y premiadas de Europa, 
+              Norteamérica y Sudamérica, que les permite tener una gran cantidad de sabores y estilos, para satisfacer 
+              todos los gustos y paladares de la comunidad. Hoy en día, ofrecen una amplia gama de cervezas, con más de 100 variedades.</p>
           </div>
           </div>
   
@@ -49,10 +53,11 @@ export const abastecete = () => {
               </div>
           </div>
           <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+              <p>Si bien el nombre de esta web es "tienda de la cerveza", en su página web podemos encontrar variedades
+              de alcoholes e incluso cristalería de variadas marcas de cervezas, pero es en su catálogo cervecero donde esta 
+              su fuerte, abundan tanto las marcas nacionales como las internacionales, ofreciendo una variedad contundente hasta para el 
+              más mañoso, cuentan con tienda física ubicada en la comuna de La Cisterna donde puedes retirar tu pedido, o pedirlo directo
+              a tu domicilio.</p>
           </div>
           </div>
   
@@ -65,10 +70,9 @@ export const abastecete = () => {
               </div>
           </div>
           <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+              <p>Aquí se dedican a la cerveza chilena artesanal en un 100%, poseen una selección limitada de productores nacionales,
+              separados por ciudad de producción, por el momento el formato de compra es por 12 unidades, esperamos que en un futuro 
+              amplien su catálogo y sus ofertas.</p>
            </div>
           </div>
   
@@ -81,10 +85,10 @@ export const abastecete = () => {
               </div>
           </div>
           <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+              <p>Importan y distribuyen cervezas desde el año 2012. Siempre cuidando las 3b. Atienden bares, 
+              restaurantes, hoteles, botillerías, distribuidoras y clientes a lo largo del País. El formato de venta 
+              de sus productos es por 6 unidades o por cajas de 
+              20 unidades, con marcas más bien limitadas y específicas, también tienen una colección de souvenirs y regalos.</p>
           </div>
           </div>
   
@@ -97,10 +101,10 @@ export const abastecete = () => {
               </div>
               </div>
               <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-                  eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-                  vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-                  dignissimos nam!</p>
+              <p>Venden uno que otro vino, pero su especialidad es la cerveceza y el merchandising asociados a ellas, cuentan
+              con una enorme (y excelente) variedad de estilos y marcas, nacionales e internacionales. Próximamente inagurarán una suscripción mensual,
+              trimestral o semestral con 12 cervezas para degustar. Puedes incluso pedir que te atiendan la barra (que ellos traen) 
+              para tus eventos, servicio completo.</p>
               </div>
           </div>
   
@@ -113,10 +117,8 @@ export const abastecete = () => {
               </div>
           </div>
           <div class="shopOnline-card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+              <p>Si bien esta web se dedica a la venta de alcohol en general, tienen una muy buena selección de cervezas
+              con buenos precios, se debe comprar en packs de 24 o 12 unidades, cuentan con cervezas nacionales e internacionales</p>
           </div>
           </div>
   
@@ -129,10 +131,10 @@ export const abastecete = () => {
           </div>
           </div>
           <div class="shopOnline-card-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-              eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-              vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-              dignissimos nam!</p>
+          <p>Este club está ubicado en la quinta región, Viña del Mar y Quillota, para ser más específicos, donde están
+          ubicados sus restaurantes, pero realizan despacho a todo Chile. Cuentan con cervezas nacionales, pero su fuerte 
+          son las internacionales, donde las marcas estadounidenses y belgas son las más destacadas. Se puede comprar por unidad
+          y por pack. </p>
           </div>
       </div>
   
@@ -146,10 +148,11 @@ export const abastecete = () => {
           </div>
       </div>
       <div class="shopOnline-card-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-          eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-          vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-          dignissimos nam!</p>
+          <p>No solo venden cervezas, si no que también puedes unirte al club cervecero y disfrutar de forma mensual, directo
+          a la puerta de tu casa 6 variedades de cervezas (3 nacionales y 3 internacionales). Su catálogo es impresionante y muy variado en cuanto a 
+          marcas y estilos. Debido a la ubicación del Java's (5ta región) el envio se ve afectado por el peso de la caja, así
+          que asegúrate de comunicarte con ellos antes de realizar un pedido, por otro lado, la suscripción al club sí es posible
+          si vives en santiago, consulta por el precio de despacho.</p>
       </div>
       </div>
   
@@ -162,10 +165,11 @@ export const abastecete = () => {
           </div>
       </div>
       <div class="shopOnline-card-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-          eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-          vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-          dignissimos nam!</p>
+          <p>Dicen ser especialista en cerveza artesanal, y no es para menos ya que si bien cuentan con una selección 
+          internacional, su foco está siempre en promover la cerveza nacional, ofreciendo en sus restaurantes a los clientes 
+          cervezas de todos los rincones del país. En sus locales cuentan con al menos 35 líneas, lo que los convierte
+           en los bares con mayor variedad de cerveza en barril del país. Su formato de venta es diferente a los demás,
+           ya que ellos llenan growlers o botellas boca ancha con la cerveza a elección.</p>
       </div>
       </div>
   
@@ -178,10 +182,10 @@ export const abastecete = () => {
       </div>
       </div>
       <div class="shopOnline-card-text">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-          eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-          vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-          dignissimos nam!</p>
+      <p>Aquí tenemos otro club cervecero con un buen catálogo de cervezas nacionales, consta con 3 tipos de membresía, 
+      cada cual viene con un determinado número de cervezas mensuales (6,12 o 18), invitaciones a degustaciones,
+      catas guiadas de cervezas y beneficios en bares y restaurantes. Si la suscripción no es lo tuyo
+      también puedes comprar tus cervezas en packs o unidades.</p>
       </div>
       </div>
   
@@ -194,10 +198,9 @@ export const abastecete = () => {
       </div>
       </div>
       <div class="shopOnline-card-text">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-          eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-          vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-          dignissimos nam!</p>
+      <p>Fundada en el año 2018,con una tienda física ubicada en la comuna de Providencia, cuentan con una amplia gama de licores
+      y vinos, en cuanto a las cervezas, si bien si catálogo no es extenso, de lo bueno poco y destacan marcas internacionales
+      como "Founders" y nacionales como "granizo". En su local puedes encontrar merch asociado a marcas de cervezas.</p>
       </div>
       </div>
   
@@ -210,10 +213,10 @@ export const abastecete = () => {
       </div>
       </div>
       <div class="shopOnline-card-text">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias quidem, nihil quaerat accusamus labore inventore
-          eos expedita ullam suscipit praesentium quos, aliquid magni fugit sunt perferendis consectetur earum commodi? Iure
-          vero maiores esse consequatur incidunt deserunt minima natus repellendus non quam ut ad officiis et nihil, laboriosam
-          dignissimos nam!</p>
+      <p>Fundada el 2015 en el centro comercial "Omnium" en la comunda de Las Conder, quí tenemos una selección de las mejores 
+      cervezas de Chile y el mundo. las tienen en botellas, latas, packs, promociones y merch.
+      A veces sus precios están por encima de lo que puedes encontrar en otros lugares, pero se preocupan de tener buenas
+      ofertas.</p>
       </div>
       </div>
       </section>

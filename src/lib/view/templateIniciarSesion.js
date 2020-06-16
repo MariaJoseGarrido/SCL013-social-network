@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { registrarse } from './templateRegistrarse';
 import { login } from '../index.js';
 import { register } from './register.js';
@@ -14,6 +15,11 @@ export const iniciarSesion = () => {
     btn.addEventListener('click', () => { login() })
   return divIniciarsesion;
 }; */
+=======
+import {
+  login
+} from '../index.js'
+>>>>>>> 957b935a62cf75aaa64f954a4ae625ff2cc7a23c
 
 export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');

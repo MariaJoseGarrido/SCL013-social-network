@@ -1,3 +1,5 @@
+import { login } from '../index.js';
+
 export const home = () => {
   const divHome = document.createElement("div");
   const viewHome = `   

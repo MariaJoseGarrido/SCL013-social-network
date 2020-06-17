@@ -617,7 +617,6 @@ h2 {
 
 /*fin*/
 
-<<<<<<< HEAD
 /*donde beber*/
 .map {
   display: flex;
@@ -628,8 +627,6 @@ h2 {
 }
 /**/
 
-=======
->>>>>>> a231dce4eb6fce8b01f98acdeb011fdbb839f8b3
 /* iniciar sesión */
 
 .background-iniciar {
@@ -809,33 +806,6 @@ label {
   margin: 20px;
 
 }
-
-/*Template Mapa*/
-
-.map {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-}
-
-.contentMap {
-  background: #f5ebeb;
-  border: 2px solid;
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  margin-left: 200px;
-  padding-left: 20px;
-}
-
-img.iconMap {
-  width: 40px;
-}
-
-
-/*fin template mapa*/ 
 
 @media (max-width: 600px) {
 #homeContent {

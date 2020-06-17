@@ -1,7 +1,3 @@
-import {
-  login
-} from '../index.js'
-
 export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');
 
@@ -19,12 +15,11 @@ export const iniciarSesion = () => {
     <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
     </div>
     <span></span>
-    <input class="inputInicio" type="email" placeholder="Email" />
-    <input class="inputInicio" type="password" placeholder="Contraseña" />
+    <input class="inputInicio" id="emailInicio" type="email" placeholder="Email" />
+    <input class="inputInicio" id="passawordInicio" type="password" placeholder="Contraseña" />
     <a id="forgetPassword" href="#">¿olvidaste tu contraseña?</a>
     <button class="btnInicio" id='btnEntrar'>Entrar</button>
-  </form> 
-
+    </form>
   <div class="hello">
   <form>
   <h1 class='titleInicio'>Crear una cuenta</h1>
@@ -43,24 +38,6 @@ export const iniciarSesion = () => {
   `
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
-  const btn = divIniciarsesion.querySelector('#google');
-  btn.addEventListener('click', () => {
-    login()
-  })
-
- /*  divIniciarsesion.innerHTML = viewIniciarsesion;
-  const btnUserPassword = viewIniciarsesion.querySelector('#registrarUsuario');
-  btnUserPassword.addEventListener('click', () => { 
-    const email = viewIniciarsesion.querySelector('#emailRegistrar').value;
-    const password = viewIniciarsesion.querySelector('#contrasenaRegistrar').value;
-    register(email, password)
-  })
-
-  const btnvistaRegistrarse = viewIniciarsesion.querySelector('#registrarUsuario');
-  btnvistaRegistrarse.addEventListener('click', () => { 
-    registrarse();
-  })  */
-
   return divIniciarsesion;
 };
 

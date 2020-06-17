@@ -2,9 +2,14 @@ export const iniciarSesion = () => {
   const divIniciarsesion = document.createElement('div');
 
   const viewIniciarsesion = 
-  `  <div class="sign-in-container">
-  <form class="formInicio">
-    <h1 class='titleInicio'>Iniciar Sesión</h1>
+  `  
+  <div class="background-iniciar">
+  <div class="banner d-flex justify-content-center">
+  <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
+ </div>
+<div class="sign-in-container">
+    <form class="formInicio">
+    <h1 class='titleSesion'>Iniciar Sesión</h1>
     <div class='social-container'>
     <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
     <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
@@ -16,7 +21,7 @@ export const iniciarSesion = () => {
     <button class="btnInicio" id='btnEntrar'>Entrar</button>
     </form>
   <div class="hello">
-  <form class="formInicio">
+  <form>
   <h1 class='titleInicio'>Crear una cuenta</h1>
   <div class='social-container'>
   <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
@@ -27,7 +32,10 @@ export const iniciarSesion = () => {
   <input class="inputInicio" type="password" id="passwordRegistro"placeholder="Contraseña" />
   <button class="btnInicio" id='btnRegistrarse'>Registrarse</button>
 </form> 
-  </div></div>`
+  </div>
+  </div>
+  </div>
+  `
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
   return divIniciarsesion;

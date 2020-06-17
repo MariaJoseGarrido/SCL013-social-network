@@ -10,11 +10,11 @@ export const abastecete = () => {
       <section class="shopOnline">
       <div class="shopOnline-card">
           <div class="shopOnline-card-img">
-          <div class="shopOnline-card-img-content">
+            <div class="shopOnline-card-img-content">
               <a href="https://www.beervana.cl/"> 
               <img class="img-fluid" src="./img/logo-logo-beervana.png" >
               </a>
-          </div>
+            </div>
           </div>
           <div class="shopOnline-card-text">
           <p>Tienda especializada que cuenta con la más amplia variedad de cervezas artesanales en todo Chile. 

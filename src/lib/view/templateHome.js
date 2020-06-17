@@ -1,23 +1,27 @@
 export const home = () => {
   const divHome = document.createElement("div");
   const viewHome = `   
-  <div id="background">
-  <div class=containerWeb Home>
-  <div id="homeContent">
-  <hr class="lineHome">
-  <h1 id="titleInicio" class="welcome">BIENVENIDO A SOCIALBEER</h1>
-  <div id="imgLogoHome" class="d-flex justify-content-center"> 
-  <img id="logoHome" src="./img/logo.png"> 
-  </div>
-  <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
-  <hr class="lineHome">
-  <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
-  <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
-  </div>
-  </div>
-  <div> <img id="logoMapa" src="./img/mapa.png">
-  </div> 
-  `
+  <div class="container-background">
+      <div id="background-home">
+          <div class="homeContent">
+            <hr class="lineHome">
+            <h1 id="titleHome" class="welcome">BIENVENIDO A SOCIALBEER</h1>
+              <div id="imgLogoHome" class="d-flex justify-content-center"> 
+                <img id="logoHome" src="./img/logo.png">  
+              </div>
+            <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
+            <hr class="lineHome">
+            <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
+            <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
+          </div>
+      </div>
+      <div class="background-map"> 
+        <div class="homeContent">
+         <h1>ENCUENTRA TUS LOCALES EN NUESTRO MAPA, ARREGLAR!!!</h1>
+        </div>
+      </div> 
+  </div>  
+    `
 
   divHome.innerHTML = viewHome;
   return divHome;

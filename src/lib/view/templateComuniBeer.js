@@ -3,41 +3,34 @@ export const comuniBeer = () => {
   const viewcomuniBeer = ` 
   <div id="containerComunity">  
     <div id="banner">
-      <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer"></div>
-      <div class="d-flex align-items-center justify-content-center">
+      <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
+    </div>
+      <div class="container-comunibeer">
         <div class="comments">
           <div class="textComments">
-          <h3 class="titleInicio">Crea tu reseña cervecera</h3>
-          <div class="ec-stars-wrapper">
-          <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-          <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-          <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-          <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-          <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+              <h3 class="titleInicio">Crea tu reseña cervecera</h3>
+            <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+            </div>
+            <br>
+            <input type="text" id="marcaC" placeholder='Marca de tu cerveza' class='inputInicio'></input>
+            <input type="text" id="tipoC" placeholder='Tipo de tu cerveza' class='inputInicio'></input>
+            <textarea type='text' id="textoC" placeholder='Reseña de tu cerveza' class='inputInicio reseña'></textarea>
+            <br>
+            <button class='btnInicio' id='btn-comment'>Comentar!</button>
           </div>
-          <br>
-          <input type="text" id="marcaC" placeholder='Marca de tu cerveza' class='inputInicio'></input>
-          <input type="text" id="tipoC" placeholder='Tipo de tu cerveza' class='inputInicio'></input>
-          <textarea type='text' id="textoC" placeholder='Reseña de tu cerveza' class='inputInicio reseña'></textarea>
-          <br>
-          <button class='btnInicio' id='btn-comment'>Comentar!</button>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class='table' id="table">
-    <head>
-      <tr>
-        <th scope='col'>Id</th>
-        <th scope='col'>Marca Cerveza</th>
-        <th scope='col'>Tipo Cerveza</th>
-        <th scope='col'>Reseña Cerveza</th>
-      </tr>
-    </head>
-  </div>
+          <div class="spotify">
+            <h1>MALDITO BORRACHO</h1>
+            <iframe src='https://open.spotify.com/embed/playlist/5vYkdZqio6UOLB1qtYGGVe?si=x3vZxUVlR3WUoaXy_tsg-A' width="300" height="380" frameborder='0' allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
   <div>
   <footer id="footerWeb">Hecho por Francista, Maria José y Katherine</footer>
-  </div>
+</div>
   `
   divcomuniBeer.innerHTML = viewcomuniBeer;
   const botonComentario = divcomuniBeer.querySelector('#btn-comment');

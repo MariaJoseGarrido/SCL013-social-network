@@ -28,6 +28,7 @@ export const comuniBeer = () => {
         <br>
         <input type="text" id="inputBeerBrand" placeholder='Marca de tu cerveza' class='inputWeb'></input>
         <input type="text" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
+        <input type="text" id="inputCountry" placeholder='País' class='inputWeb'></input>
         <textarea type='text' id="inputReviewBeer" placeholder='Reseña de tu cerveza' class='inputWeb review'></textarea>
         <br>
         <button type="submit" class='btnWeb' id='btnReview'>¡Reseñar!</button>

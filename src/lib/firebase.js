@@ -19,12 +19,12 @@ export const loginUser = (email,password) => {
     var errorMessage = error.message;
     // [START_EXCLUDE]
     if (errorCode === 'auth/wrong-password') {
-      alert('Contraseña incorrecta.');
+      alert('Lo siento, tu contraseña es incorrecta');
     } else {
       alert(errorMessage);
     }
     console.log(error);
-    document.getElementById('quickstart-sign-in').disabled = false;
+    document.getElementById('btnEntrar').disabled = false;
     // [END_EXCLUDE]
   });
 }
@@ -34,7 +34,7 @@ export const createUser = (email,password) => {
   firebase.auth().createUserWithEmailAndPassword(email, password)
               .then(function(user){
                 emailVerification(); //agregar nombre a user
-                alert("Verifica tu email y podras acceder");
+                alert("Verifica tu correo para acceder al sitio");
                 logOut();
               })
               .catch(function(error) {
@@ -87,12 +87,12 @@ firebase.auth().signOut()
 }
 
 export const sendPasswordReset = () => {
-  var email = document.getElementById('email').value;
+  var email = document.getElementById('emailInicio').value;
   // [START sendpasswordemail]
   firebase.auth().sendPasswordResetEmail(email).then(function() {
     // Password Reset Email Sent!
     // [START_EXCLUDE]
-    alert('¡Se ha enviado un correo para restablecer contraseña!');
+    alert('Se ha enviado un correo para restablecer contraseña, ¡yey!');
     // [END_EXCLUDE]
   }).catch(function(error) {
     // Handle Errors here.

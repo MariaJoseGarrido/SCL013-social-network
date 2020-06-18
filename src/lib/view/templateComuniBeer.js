@@ -75,11 +75,10 @@ export const comuniBeer = () => {
   const btnReviewBeer = divcomuniBeer.querySelector('#btnReview');
   btnReviewBeer.addEventListener('click', guardar);
   
-  return divcomuniBeer;
 
 
   //Inicia firestore
-  var db = firebase.Firestore();
+  var db = firebase.firestore();
 
 
   //Agregar comentarios
@@ -91,20 +90,12 @@ export const comuniBeer = () => {
     let beerReview = document.getElementById('inputReviewBeer').value;
     let beerImg = document.getElementById('btnImageUpload').value;
 
-<<<<<<< HEAD
-  db.collection("reseñas").add({
-      marcaCerveza: marcaC,
-      tipoCerveza: tipoC,
-      paisCerveza:
-      textoReseña: textoC
-=======
   db.collection("resenas").add({
       marcaCerveza: beerBrand,
       tipoCerveza: beerType,
       paisCerveza: beerCountry,
       resenaCerveza: beerReview,
       imagenCerveza: beerImg
->>>>>>> c50014d879ae7883ad80fda2289e10f4203b9d2a
   })
   .then(function(docRef) {
       console.log("Document written with ID: ", docRef.id);
@@ -122,21 +113,26 @@ export const comuniBeer = () => {
 //leer doc
 let divReview = document.getElementById('rootReview');
 db.collection("resenas").onSnapshot((querySnapshot) => {
-divReview.innerHTML='';
-querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
+    divReview.innerHTML='';
+    querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id} => ${doc.data().marcaCerveza}`);
     divReview.innerHTML += `
-    <seccion id="textReview">
+    <section id="textReview">
     <p>${doc.id}</p>
     <img ${doc.data().imagenCerveza}>
     <h4>${doc.data().marcaCerveza}</h4>
     <h5>${doc.data().tipoCerveza}</h5>
     <h5>${doc.data().paísCerveza}</h5>
     <p>${doc.data().resenaCerveza}</p>
-    </seccion>
+    </section>
     `
-} );
-});
-}
+  });
+})
+
+return divcomuniBeer;
+
+};
+
+
 
 //document.querySelector('.btn-info').addEventListener('click',guardar);

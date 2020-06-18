@@ -33,7 +33,7 @@ const init = () => {
         break;
 
       case '#iniciarsesion':
-        const btn = document.querySelector('#google');
+        const btn = document.querySelector('#google-i');
         btn.addEventListener('click', () => {
           login()
         })

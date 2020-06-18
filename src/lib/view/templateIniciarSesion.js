@@ -11,8 +11,8 @@ export const iniciarSesion = () => {
     <form class="formInicio">
     <h1 class='titleSesion'>Iniciar Sesión</h1>
     <div class='social-container'>
-    <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
-    <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
+    <button href='#' id='facebook-i' class='social'><i class='fab fa-facebook-f'></i></button>
+    <button href='#' id='google-i' class='social'><i class='fab fa-google-plus-g'></i></button>
     </div>
     <span></span>
     <input class="inputWeb" id="emailInicio" type="email" placeholder="Email" />
@@ -24,8 +24,8 @@ export const iniciarSesion = () => {
   <form>
   <h1 class='titleInicio'>Crear una cuenta</h1>
   <div class='social-container'>
-  <button href='#' id='facebook' class='social'><i class='fab fa-facebook-f'></i></button>
-  <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
+  <button href='#' id='facebook-r' class='social'><i class='fab fa-facebook-f'></i></button>
+  <button href='#' id='google-r' class='social'><i class='fab fa-google-plus-g'></i></button>
   </div>
   <span></span>
   <input class="inputWeb" type="email" id="emailRegistro" placeholder="Email" />

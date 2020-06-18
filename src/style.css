@@ -678,13 +678,25 @@ h2 {
 	width: 50px;
 }
 
-#google:hover {
+#google-i:hover {
   background-color: #BA3B2C;
   transition: 0.3s;
   color: #DDDDDD;
 }
 
-#facebook:hover {
+#google-r:hover {
+  background-color: #BA3B2C;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+#facebook-r:hover {
+  background-color: #4064AD;
+  transition: 0.3s;
+  color: #DDDDDD;
+}
+
+#facebook-i:hover {
   background-color: #4064AD;
   transition: 0.3s;
   color: #DDDDDD;

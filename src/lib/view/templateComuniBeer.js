@@ -53,7 +53,6 @@ export const comuniBeer = () => {
       <div id="profile">
         <h1>Perfil</h1>
         <div id="rootProfile">
-
         </div>
       </div>
       <div id="spotify">

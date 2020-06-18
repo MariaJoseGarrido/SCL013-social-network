@@ -804,6 +804,10 @@ label {
   text-align: center;
 }
 
+#inputCommentsBeer, #inputReviewBeer {
+  resize: none;
+}
+
 /* input file  */
 
 /* Estrellas */

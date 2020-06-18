@@ -72,8 +72,8 @@ export const comuniBeer = () => {
   </div>
   `
   divcomuniBeer.innerHTML = viewcomuniBeer;
-  const botonComentario = divcomuniBeer.querySelector('#btnReview');
-  botonComentario.addEventListener('click', guardar);
+  const btnReviewBeer = divcomuniBeer.querySelector('#btnReview');
+  btnReviewBeer.addEventListener('click', guardar);
   
   return divcomuniBeer;
 
@@ -85,21 +85,34 @@ export const comuniBeer = () => {
   //Agregar comentarios
 
   function guardar(){
-    let marcaC = document.getElementById('marcaC').value;
-    let tipoC = document.getElementById('tipoC').value;
-    let textoC = document.getElementById('textoC').value;
+    let beerBrand = document.getElementById('inputBeerBrand').value;
+    let beerType = document.getElementById('inputBeerType').value;
+    let beerCountry = document.getElementById('inputCountry').value;
+    let beerReview = document.getElementById('inputReviewBeer').value;
+    let beerImg = document.getElementById('btnImageUpload').value;
 
+<<<<<<< HEAD
   db.collection("reseñas").add({
       marcaCerveza: marcaC,
       tipoCerveza: tipoC,
       paisCerveza:
       textoReseña: textoC
+=======
+  db.collection("resenas").add({
+      marcaCerveza: beerBrand,
+      tipoCerveza: beerType,
+      paisCerveza: beerCountry,
+      resenaCerveza: beerReview,
+      imagenCerveza: beerImg
+>>>>>>> c50014d879ae7883ad80fda2289e10f4203b9d2a
   })
   .then(function(docRef) {
       console.log("Document written with ID: ", docRef.id);
-      document.getElementById('marcaC').value='';
-      document.getElementById('tipoC').value='';
-      document.getElementById('textoC').value='';
+      document.getElementById('inputBeerBrand').value='';
+      document.getElementById('inputBeerType').value='';
+      document.getElementById('inputCountry').value='';
+      document.getElementById('inputReviewBeer').value='';
+      document.getElementById('btnImageUpload').value='';
   })
   .catch(function(error) {
       console.error("Error adding document: ", error);
@@ -107,18 +120,20 @@ export const comuniBeer = () => {
   }
 
 //leer doc
-let table = document.getElementById('table');
-db.collection("reseñas").onSnapshot((querySnapshot) => {
-table.innerHTML='';
+let divReview = document.getElementById('rootReview');
+db.collection("resenas").onSnapshot((querySnapshot) => {
+divReview.innerHTML='';
 querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id} => ${doc.data().marcaCerveza}`);
-    table.innerHTML += `
-    <tr>
-    <th scope='row'>${doc.id}</th>
-    <th>${doc.data().marcaCerveza}</th>
-    <th>${doc.data().tipoCerveza}</th>
-    <th>${doc.data().textoReseña}</th>
-    </tr>
+    divReview.innerHTML += `
+    <seccion id="textReview">
+    <p>${doc.id}</p>
+    <img ${doc.data().imagenCerveza}>
+    <h4>${doc.data().marcaCerveza}</h4>
+    <h5>${doc.data().tipoCerveza}</h5>
+    <h5>${doc.data().paísCerveza}</h5>
+    <p>${doc.data().resenaCerveza}</p>
+    </seccion>
     `
 } );
 });

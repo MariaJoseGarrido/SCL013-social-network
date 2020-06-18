@@ -40,7 +40,8 @@ export const comuniBeer = () => {
 
 
   //Inicia firestore
-  let db = firebase.firestore();
+  var database = firebase.database();
+
 
   //Agregar comentarios
 

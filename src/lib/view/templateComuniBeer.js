@@ -90,7 +90,7 @@ export const comuniBeer = () => {
     let beerReview = document.getElementById('inputReviewBeer').value;
     let beerImg = document.getElementById('btnImageUpload').value;
 
-  db.collection("reseñas").add({
+  db.collection("resenas").add({
       marcaCerveza: beerBrand,
       tipoCerveza: beerType,
       paisCerveza: beerCountry,
@@ -112,7 +112,7 @@ export const comuniBeer = () => {
 
 //leer doc
 let divReview = document.getElementById('rootReview');
-db.collection("reseñas").onSnapshot((querySnapshot) => {
+db.collection("resenas").onSnapshot((querySnapshot) => {
 divReview.innerHTML='';
 querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id} => ${doc.data().marcaCerveza}`);

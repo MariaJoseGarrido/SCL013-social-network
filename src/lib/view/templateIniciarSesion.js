@@ -15,10 +15,10 @@ export const iniciarSesion = () => {
     <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
     </div>
     <span></span>
-    <input class="inputInicio" id="emailInicio" type="email" placeholder="Email" />
-    <input class="inputInicio" id="passawordInicio" type="password" placeholder="Contraseña" />
+    <input class="inputWeb" id="emailInicio" type="email" placeholder="Email" />
+    <input class="inputWeb" id="passawordInicio" type="password" placeholder="Contraseña" />
     <a id="forgetPassword" href="#">¿olvidaste tu contraseña?</a>
-    <button class="btnInicio" id='btnEntrar'>Entrar</button>
+    <button class="btnWeb" id='btnEntrar'>Entrar</button>
     </form>
   <div class="hello">
   <form>
@@ -28,9 +28,9 @@ export const iniciarSesion = () => {
   <button href='#' id='google' class='social'><i class='fab fa-google-plus-g'></i></button>
   </div>
   <span></span>
-  <input class="inputInicio" type="email" id="emailRegistro" placeholder="Email" />
-  <input class="inputInicio" type="password" id="passwordRegistro"placeholder="Contraseña" />
-  <button class="btnInicio" id='btnRegistrarse'>Registrarse</button>
+  <input class="inputWeb" type="email" id="emailRegistro" placeholder="Email" />
+  <input class="inputWeb" type="password" id="passwordRegistro"placeholder="Contraseña" />
+  <button class="btnWeb" id='btnRegistrarse'>Registrarse</button>
 </form> 
   </div>
   </div>

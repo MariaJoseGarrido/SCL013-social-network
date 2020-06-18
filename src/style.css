@@ -209,12 +209,6 @@ a {
 .logoBanner {
   width: 15%;
   min-width: 80px;
-  padding-bottom: 1px;
-}
-
-#banner {
-  display: flex;
-  justify-content: center;
 }
 
 .imgEntrance {
@@ -652,17 +646,6 @@ h2 {
   color:black;
 }
 
-.inputInicio {
-	background-color: rgb(224, 224, 224);
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-  width: 60%;
-}
-.inputInicio:focus {
-  outline: 0.2px solid rgb(110, 110, 110);
-}
-
 #forgetPassword {
 	color: #333;
 	font-size: 14px;
@@ -672,39 +655,6 @@ h2 {
 
 #forgetPassword:hover {
   font-weight: bold;
-  transition: 0.3s;
-}
-
-#btn-coomment {
-  display: flex;
-}
-
-.btnInicio {
-  cursor: pointer;
-	border-radius: 20px;
-	border: 0.5px darkorange;
-  background-color: #f7a62d;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
-  0 1px 1px rgba(0,0,0,0.2);
-	font-size: 12px;
-  font-weight: bold;
-  padding: 12px 45px;
-  margin: 10px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-  transition: transform 80ms ease-in;
-}
-
-.btnInicio:active {
-  transform: scale(0.95);
-}
-
-.btnInicio:focus {
-  outline: none;
-}
-
-.btnInicio:hover {
-  background-color: #d88417;
   transition: 0.3s;
 }
 
@@ -817,32 +767,48 @@ label {
 
 }
 
-/*Reseñas*/
-.container-comunibeer{
-  display:flex;
+/*Comunibeer*/
+
+
+#containerWebComunity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.comments {
-width: 55%;
-height: 55%;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+#banner {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
-.textComments {
+#containerSocialNetwork {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
+}
+
+#reviewPostAndComments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+  width: 100%;
+}
+
+#review {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
   text-align: center;
 }
 
-/*fin*/
-
-#footerWeb{
-  padding-left: 100px;
-  color: #8a8a8a;
+#inputCommentsBeer, #inputReviewBeer {
+  resize: none;
 }
+
+/* input file  */
 
 /* Estrellas */
 .ec-stars-wrapper {
@@ -857,8 +823,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .ec-stars-wrapper a {
 	text-decoration: none;
 	display: inline-block;
-	/* Volver a dar tamaño al texto */
-	font-size: 32px;
 	font-size: 2rem;
 	
 	color: #888;
@@ -872,6 +836,104 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 	color: #888;
 }
 /* Fin Estrellas */
+
+.inputWeb {
+	background-color: rgb(224, 224, 224);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+  width: 60%;
+}
+.inputWeb:focus {
+  outline: 0.2px solid rgb(110, 110, 110);
+}
+
+#btnReview {
+  display: flex;
+}
+
+.btnWeb {
+  cursor: pointer;
+	border-radius: 20px;
+	border: 0.5px darkorange;
+  background-color: #f7a62d;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
+  0 1px 1px rgba(0,0,0,0.2);
+	font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btnWeb:active {
+  transform: scale(0.95);
+}
+
+.btnWeb:focus {
+  outline: none;
+}
+
+.btnWeb:hover {
+  background-color: #d88417;
+  transition: 0.3s;
+}
+
+#postAndComments {
+  width: 100%;
+  text-align: center;
+}
+
+#reviewPost {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#comments {
+  background: cadetblue;
+}
+
+btnComments {
+  display:flex;
+  justify-content: center;
+}
+
+#profileAndOthers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#profile {
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#spotify {
+  background: rgb(31, 31, 31);
+}
+
+#socialNetworkFooter {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+/* Fin nuevos estilos Comunibeer */
+
+.textComments {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*fin*/
+
+#footerWeb{
+  padding-left: 100px;
+  color: #8a8a8a;
+}
 
 .backgroundcolor{
   background: linear-gradient(180deg, rgba(253,218,0,1) 60%, rgba(249,249,249,1) 100%);;

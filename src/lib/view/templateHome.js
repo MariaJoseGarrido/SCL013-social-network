@@ -12,7 +12,7 @@ export const home = () => {
             <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
             <hr class="lineHome">
             <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
-            <button class=btnInicio href="#registrarse">¡Quiero ser parte!</button>
+            <button class="btnWeb" href="#registrarse">¡Quiero ser parte!</button>
           </div>
       </div>
       <div class="background-map"> 

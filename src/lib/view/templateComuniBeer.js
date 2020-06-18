@@ -79,7 +79,7 @@ export const comuniBeer = () => {
 
 
   //Inicia firestore
-  var database = firebase.database();
+  var db = firebase.Firestore();
 
 
   //Agregar comentarios
@@ -92,6 +92,7 @@ export const comuniBeer = () => {
   db.collection("reseñas").add({
       marcaCerveza: marcaC,
       tipoCerveza: tipoC,
+      paisCerveza:
       textoReseña: textoC
   })
   .then(function(docRef) {

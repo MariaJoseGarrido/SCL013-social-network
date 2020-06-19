@@ -1,3 +1,5 @@
+import { iniciarSesion } from './templateIniciarSesion.js';
+
 export const comuniBeer = () => {
   const divcomuniBeer = document.createElement("div");
   const viewcomuniBeer = ` 
@@ -22,14 +24,17 @@ export const comuniBeer = () => {
               <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
             </div>
             <div id="imageToUpload">
-            <input type="file" name="imageToUpload" id="btnImageUpload" class="inputTypeFile">
+            <input type="file" accept="image/*" name="imageToUpload" id="btnImageUpload" class="inputTypeFile">
             </div>
           </div>
         <br>
-        <input type="text" id="inputBeerBrand" placeholder='Marca de tu cerveza' class='inputWeb'></input>
-        <input type="text" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
-        <input type="text" id="inputCountry" placeholder='País' class='inputWeb'></input>
-        <textarea type='text' id="inputReviewBeer" placeholder='Reseña de tu cerveza' class='inputWeb review'></textarea>
+        <form>
+          <input type="text" id="inputBeerBrand" placeholder='Marca de tu cerveza' class='inputWeb'></input>
+          <input type="text" id="inputBeerName" placeholder='Nombre de tu cerveza (solo si tiene)' class='inputWeb'></input>
+          <input type="text" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
+          <input type="text" id="inputBeerCountry" placeholder='País' class='inputWeb'></input>
+          <textarea type='text' id="inputReviewBeer" placeholder='Reseña de tu cerveza' class='inputWeb review'></textarea>
+        </form>
         <br>
         <button type="submit" class='btnWeb' id='btnReview'>¡Reseñar!</button>
       </div>
@@ -74,34 +79,36 @@ export const comuniBeer = () => {
   divcomuniBeer.innerHTML = viewcomuniBeer;
   const btnReviewBeer = divcomuniBeer.querySelector('#btnReview');
   btnReviewBeer.addEventListener('click', guardar);
-  
-
 
   //Inicia firestore
   var db = firebase.firestore();
 
-
-  //Agregar comentarios
+  //Agregar comentarios 
 
   function guardar(){
     let beerBrand = document.getElementById('inputBeerBrand').value;
+    let beerName = document.getElementById('inputBeerName').value;
     let beerType = document.getElementById('inputBeerType').value;
-    let beerCountry = document.getElementById('inputCountry').value;
+    let beerCountry = document.getElementById('inputBeerCountry').value;
     let beerReview = document.getElementById('inputReviewBeer').value;
     let beerImg = document.getElementById('btnImageUpload').value;
 
   db.collection("resenas").add({
       marcaCerveza: beerBrand,
+      nombreCerveza: beerName,
       tipoCerveza: beerType,
       paisCerveza: beerCountry,
       resenaCerveza: beerReview,
       imagenCerveza: beerImg
   })
+
+
   .then(function(docRef) {
       console.log("Document written with ID: ", docRef.id);
       document.getElementById('inputBeerBrand').value='';
+      document.getElementById('inputBeerName').value='';
       document.getElementById('inputBeerType').value='';
-      document.getElementById('inputCountry').value='';
+      document.getElementById('inputBeerCountry').value='';
       document.getElementById('inputReviewBeer').value='';
       document.getElementById('btnImageUpload').value='';
   })
@@ -115,25 +122,24 @@ export const comuniBeer = () => {
 db.collection("resenas").onSnapshot((querySnapshot) => {
     document.getElementById("rootReview").innerHTML='';
     querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
-    console.log(`${doc.id} => ${doc.data().marcaCerveza}`);
+    console.log(`${doc.id}`);
     document.getElementById("rootReview").innerHTML += `
     <section id="textReview">
-    <p>${doc.id}</p>
-    <img ${doc.data().imagenCerveza}>
-    <h4>${doc.data().marcaCerveza}</h4>
-    <h5>${doc.data().tipoCerveza}</h5>
-    <h5>${doc.data().paísCerveza}</h5>
-    <p>${doc.data().resenaCerveza}</p>
+      <div id="post">
+        <p class="reviewLabel"> Marca: <strong> ${doc.data().marcaCerveza} </strong> </p>
+        <p class="reviewLabel"> Nombre: <strong> ${doc.data().nombreCerveza} </strong> </p>
+        <p class="reviewLabel" > Tipo: <strong> ${doc.data().tipoCerveza}</strong> </p>
+        <p class="reviewLabel" > País: <strong> ${doc.data().paisCerveza}</strong> </p>
+        <p>${doc.data().resenaCerveza}</p>
+        <img ${doc.data().imagenCerveza}>
+      </div>
     </section>
     `
   });
 })
-window.onload = function(){
-  console.log("estaweanofunciona");
-};
+
 
 return divcomuniBeer;
 
 };
-
 

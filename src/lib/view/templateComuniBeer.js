@@ -129,8 +129,6 @@ db.collection("resenas").onSnapshot((querySnapshot) => {
   });
 })
 
-};
-
 return divcomuniBeer;
 
 };

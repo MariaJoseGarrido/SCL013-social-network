@@ -15,7 +15,7 @@ export const iniciarSesion = () => {
     <button href='#' id='google-i' class='social'><i class='fab fa-google-plus-g'></i></button>
     </div>
     <span></span>
-    <input class="inputWeb" id="emailInicio" type="email" placeholder="Email" />
+    <input class="inputWeb" id="emailInicio" type="email" placeholder="Correo" />
     <input class="inputWeb" id="passawordInicio" type="password" placeholder="Contraseña" />
     <a id="forgetPassword" href="#">¿olvidaste tu contraseña?</a>
     <button class="btnWeb" id='btnEntrar'>Entrar</button>
@@ -28,7 +28,8 @@ export const iniciarSesion = () => {
   <button href='#' id='google-r' class='social'><i class='fab fa-google-plus-g'></i></button>
   </div>
   <span></span>
-  <input class="inputWeb" type="email" id="emailRegistro" placeholder="Email" />
+  <input class="inputWeb" type="name" id="nameRegistro" placeholder="Nombre" />
+  <input class="inputWeb" type="email" id="emailRegistro" placeholder="Correo" />
   <input class="inputWeb" type="password" id="passwordRegistro"placeholder="Contraseña" />
   <button class="btnWeb" id='btnRegistrarse'>Registrarse</button>
 </form> 
@@ -38,6 +39,8 @@ export const iniciarSesion = () => {
   `
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
+
+  
   return divIniciarsesion;
 };
 

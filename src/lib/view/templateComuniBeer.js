@@ -128,8 +128,7 @@ db.collection("resenas").onSnapshot((querySnapshot) => {
     `
   });
 })
-window.onload = function(){
-  console.log("estaweanofunciona");
+
 };
 
 return divcomuniBeer;

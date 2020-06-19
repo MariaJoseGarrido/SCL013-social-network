@@ -111,12 +111,12 @@ export const comuniBeer = () => {
   }
 
 //leer doc
-let divReview = document.getElementById('rootReview');
+
 db.collection("resenas").onSnapshot((querySnapshot) => {
-    divReview.innerHTML='';
+    document.getElementById("rootReview").innerHTML='';
     querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id} => ${doc.data().marcaCerveza}`);
-    divReview.innerHTML += `
+    document.getElementById("rootReview").innerHTML += `
     <section id="textReview">
     <p>${doc.id}</p>
     <img ${doc.data().imagenCerveza}>
@@ -128,11 +128,12 @@ db.collection("resenas").onSnapshot((querySnapshot) => {
     `
   });
 })
+window.onload = function(){
+  console.log("estaweanofunciona");
+};
 
 return divcomuniBeer;
 
 };
 
 
-
-//document.querySelector('.btn-info').addEventListener('click',guardar);

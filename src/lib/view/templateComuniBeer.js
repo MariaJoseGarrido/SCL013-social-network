@@ -94,6 +94,7 @@ export const comuniBeer = () => {
     let beerImg = document.getElementById('btnImageUpload').value;
 
   db.collection("resenas").add({
+      fechaPublicacion: Date.now(),
       marcaCerveza: beerBrand,
       nombreCerveza: beerName,
       tipoCerveza: beerType,
@@ -119,13 +120,14 @@ export const comuniBeer = () => {
 
 //leer doc
 
-db.collection("resenas").onSnapshot((querySnapshot) => {
+db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySnapshot) => {
     document.getElementById("rootReview").innerHTML='';
     querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id}`);
     document.getElementById("rootReview").innerHTML += `
     <section id="textReview">
       <div id="post">
+        <button id="delete" type="button">borrar</button>
         <p class="reviewLabel"> Marca: <strong> ${doc.data().marcaCerveza} </strong> </p>
         <p class="reviewLabel"> Nombre: <strong> ${doc.data().nombreCerveza} </strong> </p>
         <p class="reviewLabel" > Tipo: <strong> ${doc.data().tipoCerveza}</strong> </p>

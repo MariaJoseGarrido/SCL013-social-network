@@ -137,10 +137,6 @@ db.collection("resenas").onSnapshot((querySnapshot) => {
     `
   });
 })
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d95c86acfc9aba6d2e238660ec37289fd1d0274
 
 return divcomuniBeer;
 

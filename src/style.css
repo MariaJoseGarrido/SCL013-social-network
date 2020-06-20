@@ -167,7 +167,7 @@ body {
 .background-map {
   background-image: url("../src/img/mapa.png");
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 #logoIniciar {
@@ -199,7 +199,7 @@ body {
 
 /* Blog */
 #containerViewBlog {
-  padding-left: 60px;
+  margin: 50px 0 0 55px;
 }
 
 a {
@@ -218,6 +218,12 @@ a {
 
 #entranceContainer {
 padding: 0 20px;
+}
+
+#footerBlog {
+display: flex;
+flex-direction: row;
+
 }
 
 /* fin blog */
@@ -532,14 +538,11 @@ h2 {
 }
 
 /*Sección cervecerías chilenas*/
+
 .webbeer {
   font-family: "Titillium Web";
   text-align: center;
   padding: 0 80px;
-}
-
-.webbeer-content {
-  float: left;
 }
 
 .webbeer-content-logo {
@@ -757,6 +760,9 @@ background-color: #333;
 
 .container-contacto{
   font-family: "Titillium Web", sans-serif;
+}
+
+.contact {
   margin-left: 100px;
 }
 
@@ -764,7 +770,7 @@ label {
   display: flex;
 }
 
-#contactname, #contactmail, #contactphone , #contactcity  , #contactsubject, #coment, #contactbtn{ 
+#contactname, #contactmail, #contactphone , #contactcity  , #contactsubject, #coment { 
   margin: 20px;
 
 }
@@ -778,6 +784,8 @@ label {
 }
 
 }
+/* FIN TEMPLATE CONTACTO */
+
 
 /*Comunibeer*/
 
@@ -799,6 +807,7 @@ label {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 50px;
 }
 
 #reviewPostAndComments {
@@ -806,7 +815,8 @@ label {
   flex-direction: column;
   justify-content: center;
 	align-items: center;
-  width: 100%;
+  width: 60%;
+  margin: 0px 30px 15px 120px;
 }
 
 #review {
@@ -818,6 +828,16 @@ label {
 
 #inputCommentsBeer, #inputReviewBeer {
   resize: none;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#inputCommentsBeer:focus, #inputReviewBeer:focus {
+  outline: none;
+  border-radius: 15px;
+}
+
+#inputCommentsBeer {
+  border-radius: 15px;
 }
 
 /* input file  */
@@ -848,6 +868,30 @@ label {
 	color: #888;
 }
 /* Fin Estrellas */
+
+#btnImageUpload[type="file"] {
+  display: none;
+}
+
+#containerBtnSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btnImageUnpload {
+  display: flex;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background-color: #f7a62d;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
+  0 1px 1px rgba(0,0,0,0.2);
+}
 
 .inputWeb {
 	background-color: rgb(224, 224, 224);
@@ -880,15 +924,15 @@ label {
   transition: transform 80ms ease-in;
 }
 
-.btnWeb:active {
+.btnImageUnpload:active, .btnWeb:active {
   transform: scale(0.95);
 }
 
-.btnWeb:focus {
+.btnImageUnpload:focus, .btnWeb:focus {
   outline: none;
 }
 
-.btnWeb:hover {
+.btnImageUnpload:hover, .btnWeb:hover {
   background-color: #d88417;
   transition: 0.3s;
 }
@@ -902,10 +946,23 @@ label {
  /* nada */
 }
 
-#textReview {
+#textReviewPost {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  margin: 0 20px;
+}
+
+.labelText {
+  font-weight: 600;
+  color:  #444;
 }
 
 .reviewLabel {
+}
+
+#labelColumn {
+margin-right: 10px;
 }
 
 #post {
@@ -916,12 +973,8 @@ label {
 }
 
 #comments {
-  background: cadetblue;
-}
-
-btnComments {
-  display:flex;
-  justify-content: center;
+  background: #333;
+  width: 100%;
 }
 
 #profileAndOthers {
@@ -933,6 +986,47 @@ btnComments {
 #profile {
 border-radius: 10px;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+margin-bottom: 30px;
+}
+
+#menuBtn {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 10px  ;
+}
+
+#edit, #delete {
+  color: #333;
+}
+
+#edit:hover, #delete:hover {
+  color: goldenrod;
+}
+
+#like:hover {
+  background-color: #333;
+  color: goldenrod;
+}
+
+#like {
+  justify-content: flex-start;
+  color: #333;
+  display: flex;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background-color: #f7a62d;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2), 
+  0 1px 1px rgba(0,0,0,0.2);
+}
+
+#like:active {
+  color: rgb(255, 198, 40);
 }
 
 #spotify {
@@ -954,12 +1048,69 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 
 /*fin*/
 
-#footerWeb{
-  padding-left: 100px;
-  color: #8a8a8a;
-}
 
 .backgroundcolor{
   background: linear-gradient(180deg, rgba(253,218,0,1) 60%, rgba(249,249,249,1) 100%);;
 }
+
+/* footer */
+
+.container-primFooter {
+  height: 70px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(51,51,51,1) 80%);
+}
+
+.tituloFooterSocialBeer{
+margin-top: 31px!important;
+}
+
+.container-finFooter{
+margin-top: 0px;
+background-color: #333!important;
+height: 150px;
+padding-bottom: 16px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.logoSocialBeer img{
+  width: 130px;
+  height: 150px;
+  margin: 0px 20px 0px 70px;
+}
+
+.menuFooter {
+color: white;
+text-decoration: none;
+text-align: right;
+margin-right: 24px;
+}
+
+.menuFooter a{
+text-decoration: none;
+color: white;
+}
+
+.iconFooter {
+font-weight: 700 !important;
+background: white;
+color: #333;
+border-radius: 50px;
+height: 20px;
+width: 20px;
+text-align: center;
+padding: 4px;
+margin: 0px 2px 0px 2px;
+}
+
+p.copyrigth {
+font-size: 12px;
+margin-top: 40px;
+color: #9a9a9a;
+}
+
+
+/* fin footer */
+
 

@@ -125,7 +125,7 @@ export const comuniBeer = () => {
     let beerType = document.getElementById('inputBeerType').value;
     let beerCountry = document.getElementById('inputBeerCountry').value;
     let beerReview = document.getElementById('inputReviewBeer').value;
-    let beerImg = document.getElementById('btnImageUpload').value;
+    let beerImg = document.getElementById('file-upload').value;
 
   db.collection("resenas").add({
       fechaPublicacion: Date.now(),
@@ -145,7 +145,7 @@ export const comuniBeer = () => {
       document.getElementById('inputBeerType').value='';
       document.getElementById('inputBeerCountry').value='';
       document.getElementById('inputReviewBeer').value='';
-      document.getElementById('btnImageUpload').value='';
+      document.getElementById('file-upload').value='';
   })
   .catch(function(error) {
       console.error("Error adding document: ", error);
@@ -162,7 +162,7 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
     <section id="containerReviewPost">
       <div id="post">
         <div id="menuBtn">
-          <a href="#" id="delete"><i class="fas fa-trash-alt"></i>
+          <a id="delete-${doc.id}"><i class="fas fa-trash-alt"></i>
           </a>
           <a href="#" id="edit"><i class="fas fa-edit"></i>
           </a>
@@ -195,8 +195,19 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
           <br>
           <button type="submit" class='btnWeb' id='btnComments'>¡comentar!</button>
         </div>  
-    </section>
+    </section>    
     `
+    const del = document.querySelector(`#delete-${doc.id}`)
+      del.addEventListener('click', () => {
+        console.log("entro al boton")
+        db.collection("resenas").doc(doc.id).delete()
+        .then( () => {
+        console.log("Document successfully deleted!");
+        })
+        .catch( (error) => {
+        console.error("Error removing document: ", error);
+        });
+    })
   });
 })
 

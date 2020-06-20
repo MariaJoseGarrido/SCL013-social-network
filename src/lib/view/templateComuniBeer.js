@@ -4,16 +4,12 @@ export const comuniBeer = () => {
   const divcomuniBeer = document.createElement("div");
   const viewcomuniBeer = ` 
   <div id="containerWebComunity">
-  <h1>Contenedor</h1>
   <header id="banner">
     <img class="logoBanner" src="http://imgfz.com/i/bGv4odX.png" alt="Logo SocialBeer">
   </header>
   <div id="containerSocialNetwork">
-    <h1>RedSocial</h1>
     <section id="reviewPostAndComments">
-      <h1>Contenedor Reseñas y Post</h1>
       <div id="review">
-        <h1>Reseñas</h1>
         <h3>Crea tu reseña cervecera</h3>
           <div id="startAndImage">
             <div class="ec-stars-wrapper">
@@ -23,39 +19,34 @@ export const comuniBeer = () => {
               <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
               <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
             </div>
-            <div id="imageToUpload">
-            <input type="file" accept="image/*" name="imageToUpload" id="btnImageUpload" class="inputTypeFile">
-            </div>
           </div>
         <br>
         <form>
-          <input type="text" id="inputBeerBrand" placeholder='Marca de tu cerveza' class='inputWeb'></input>
-          <input type="text" id="inputBeerName" placeholder='Nombre de tu cerveza (solo si tiene)' class='inputWeb'></input>
-          <input type="text" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
-          <input type="text" id="inputBeerCountry" placeholder='País' class='inputWeb'></input>
+          <input type="text" autocomplete="off" id="inputBeerBrand" placeholder='Marca de tu cerveza' class='inputWeb'></input>
+          <input type="text" autocomplete="off" id="inputBeerName" placeholder='Nombre de tu cerveza (solo si tiene)' class='inputWeb'></input>
+          <input type="text" autocomplete="off" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
+          <input type="text" autocomplete="off" id="inputBeerCountry" placeholder='País' class='inputWeb'></input>
           <textarea type='text' id="inputReviewBeer" placeholder='Reseña de tu cerveza' class='inputWeb review'></textarea>
         </form>
         <br>
-        <button type="submit" class='btnWeb' id='btnReview'>¡Reseñar!</button>
+        <div id="containerBtnSubmit">
+          <label for="file-upload" class="btnImageUnpload">
+            <i class="fas fa-camera"></i>
+          </label>
+          <input id="file-upload" type="file" style='display: none;'/>
+          <div id="info"></div> 
+          <button type="submit" class='btnWeb' id='btnReview'>¡Reseñar!</button>  
+        </div>
+        
       </div>
       <div id="postAndComments">
-        <h1>Post Fijos y Comentarios</h1>
-        <div id="reviewPost"
+        <div id="reviewPost">
           <h1>Post Reseñas</h1>
           <div id="rootReview"></div>
         </div>
-        <div id="comments">
-          <h1>Comentarios</h1>
-          <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>
-          <br>
-          <button type="submit" class='btnWeb' id='btnComments'>¡comentar!</button>
-        </div>
-        <p>Fin Post Fijos y Comentarios</p>
       </div>
-      <p>fin contenedor reseñas y post</p>
     </section>
     <section id="profileAndOthers">
-      <h1>Contenedor Perfil y Otros</h1>
       <div id="profile">
         <h1>Perfil</h1>
         <div id="rootProfile">
@@ -66,15 +57,58 @@ export const comuniBeer = () => {
         <iframe src='https://open.spotify.com/embed/playlist/5vYkdZqio6UOLB1qtYGGVe?si=x3vZxUVlR3WUoaXy_tsg-A' width="300" height="380" frameborder='0' allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       </div>
-      <p>Fin Contenedor Perfil y Otros</p>
     </section>
-    <p>Fin contenedor RedSocial</p>
   </div>
-  <footer id="socialNetworkFooter">
-    <h1>pie de página</h1>
+  </div>
+  <footer>
+  <div class="container-primFooter"> 
+  </div> 
+  <div class="container-finFooter">
+   
+    <div class="logoSocialBeer"> 
+      <a href="#home"> 
+      <img src="./img/logo.png" alt="Logo del sitio"> 
+    </div>
+  
+    <div class="menuFooter">
+      <p class="opmenuFooter">
+        <a href="#blog"> Blog </a>
+        | &nbsp;
+        <a href="#comunibeer"> Comunibeer </a>
+        | &nbsp;
+        <a href="#dondebeber"> ¿Dónde beber? </a>
+        | &nbsp;
+        <a href="#eventos"> Eventos </a>
+        | &nbsp;
+        <a href="#abastecete"> ¡Abastécete! </a>
+        | &nbsp;
+        <a href="#cerveceriasChilenas"> Cervecerías Chilenas </a>
+      </p>
+  
+      <p class="menuiconsFooter"> 
+        <a href="#home"> 
+          <i class="fa fa-home iconFooter"> </i> 
+        </a>
+        <a href="#iniciarsesion"> 
+          <i class="fa fa-user iconFooter"></i> 
+        </a> 
+        <a href="#contacto"> 
+          <i class="fas fa-phone iconFooter"></i> 
+        </a>
+        <a href="https://open.spotify.com/embed/playlist/5vYkdZqio6UOLB1qtYGGVe?si=x3vZxUVlR3WUoaXy_tsg-A" target="_blank"> 
+          <i class="fas fa-music iconFooter"></i> 
+        </a>
+      </p>
+  
+        <p class="copyrigth">
+          ©️ 2020 Social Beer™️  | Todos los derechos reservados.
+        </p>
+      </div>
+      
+    </div>
+  
   </footer>
-  <p>fin contenedor web</p>
-  </div>
+
   `
   divcomuniBeer.innerHTML = viewcomuniBeer;
   const btnReviewBeer = divcomuniBeer.querySelector('#btnReview');
@@ -125,24 +159,57 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
     querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
     console.log(`${doc.id}`);
     document.getElementById("rootReview").innerHTML += `
-    <section id="textReview">
+    <section id="containerReviewPost">
       <div id="post">
-        <button id="delete" type="button">borrar</button>
-        <p class="reviewLabel"> Marca: <strong> ${doc.data().marcaCerveza} </strong> </p>
-        <p class="reviewLabel"> Nombre: <strong> ${doc.data().nombreCerveza} </strong> </p>
-        <p class="reviewLabel" > Tipo: <strong> ${doc.data().tipoCerveza}</strong> </p>
-        <p class="reviewLabel" > País: <strong> ${doc.data().paisCerveza}</strong> </p>
-        <p>${doc.data().resenaCerveza}</p>
-        <img ${doc.data().imagenCerveza}>
+        <div id="menuBtn">
+          <a href="#" id="delete"><i class="fas fa-trash-alt"></i>
+          </a>
+          <a href="#" id="edit"><i class="fas fa-edit"></i>
+          </a>
+        </div>
+        <div id="textReviewPost">
+          <div id="labelColumn">
+            <p class="labelText"> MARCA: </p>
+            <p class="labelText"> Nombre: </p>
+            <p class="labelText"> TIPO: </p>
+            <p class="labelText"> PAÍS: </p>
+          </div>
+          <div id="inputEntranceColumn">
+            <p class="reviewLabel"> <strong> ${doc.data().marcaCerveza} </strong> </p>
+            <p class="reviewLabel"> <strong> ${doc.data().nombreCerveza} </strong> </p>
+            <p class="reviewLabel"> <strong> ${doc.data().tipoCerveza}</strong> </p>
+            <p class="reviewLabel"> <strong> ${doc.data().paisCerveza}</strong> </p>
+          </div>
+        </div>
+          <div id="reviewRow">
+          <p>${doc.data().resenaCerveza}</p>
+          </div>
+          <img ${doc.data().imagenCerveza}>
+        <div id="likeBtn">
+          <a href="#" id="like"><i class="fas fa-beer"></i>
+          </a>
+        </div>
       </div>
+        <div id="comments">
+          <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>
+          <br>
+          <button type="submit" class='btnWeb' id='btnComments'>¡comentar!</button>
+        </div>  
     </section>
     `
   });
 })
-<<<<<<< HEAD
-=======
 
->>>>>>> 8d95c86acfc9aba6d2e238660ec37289fd1d0274
+/* const postContainer = document.querySelector('#post') */
+/* const deleteBtn = document.querySelector("#delete")
+ deleteBtn.onclick = () => {
+  db.collection("resenas").doc(doc.id).delete().then( () => {
+    console.log("Document successfully deleted!");
+  }).catch( (error) => {
+    console.error("Error removing document: ", error);
+  });
+ } */
+
 
 return divcomuniBeer;
 

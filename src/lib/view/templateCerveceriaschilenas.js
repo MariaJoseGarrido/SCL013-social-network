@@ -2,276 +2,285 @@ export const cerveceriasChilenas = () => {
     const divCerveceriasChilenas = document.createElement("div");
   
     const viewCerveceriasChilenas = `
-          <div id="banner">
-          <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
+    <div id="banner">
+        <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
+    </div>
+    <div id="containerChileanBeer">
+    <!-- sección cervezas -->
+    <section class="webbeer">
+        <!-- sección cervezas # -->
+        <div class="webbeer-content">
+            <br>
+            <h3>#</h3>
+            <div class="webbeer-content-logo">
+                <a href="https://www.cervezamas56.cl/"> 
+                    <img class="img-fluid" src="./img/Logos cervezas/logo-56.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <!-- sección cervezas A -->
+            <div class="webbeer-content">
+                <h3>A</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cerveceraaltamira.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/altamira.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezaaltosdecantillana.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-cantillana.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.brewstillery.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-alchimia.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezaanima.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-anima.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://cervezaantillanca.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/antillanca.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.arisca.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-arisca.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.atrapaniebla.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/atrapaniebla.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezaaustral.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-austral.png">
+                    </a>
+                </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            <!-- sección cervezas B -->
+            <div class="webbeer-content">
+                    <h3>B</h3>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezabaron.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-baron.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://berner.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-berner.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://brauzehn.cl/web/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/brau-zehn.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://cervezabundor.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/bundor.jpg">
+                    </a>
+                </div>
           </div>
-          <!-- sección cervezas -->
-          <section class="webbeer">
-          <!-- sección cervezas # -->
+          <div class="clearfix">
+          </div>
+        <!-- sección cervezas C -->
           <div class="webbeer-content">
-          <br>
-          <h3>#</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezamas56.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-56.jpg">
-              </a>
-          </div>
-          </div>
-          <div class="clearfix"></div>
-          <!-- sección cervezas A -->
-          <div class="webbeer-content">
-          <h3>A</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cerveceraaltamira.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/altamira.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezaaltosdecantillana.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-cantillana.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.brewstillery.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-alchimia.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezaanima.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-anima.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://cervezaantillanca.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/antillanca.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.arisca.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-arisca.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.atrapaniebla.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/atrapaniebla.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezaaustral.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-austral.png">
-              </a>
-          </div>
-          </div>
-          <div class="clearfix"></div>
-          <!-- sección cervezas B -->
-          <div class="webbeer-content">
-          <h3>B</h3>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezabaron.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-baron.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://berner.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-berner.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://brauzehn.cl/web/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/brau-zehn.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://cervezabundor.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/bundor.jpg">
-              </a>
-          </div>
-          </div>
-          <div class="clearfix"></div>
-          <!-- sección cervezas C -->
-          <div class="webbeer-content">
-          <h3>C</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://cervezacallecalle.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-callecalle.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezacardelius.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo cardelius.jpeg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://cervezacelta.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/celta.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://elcesar.beer/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-cesar.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezacerrosdechena.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-cerros-de-chena.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.chesterbeer.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/chester_beer_logo.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://cervezachucao.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-chucao.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.coda.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-coda.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">  
-              <a href="https://www.cuellonegro.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/cuello negro.png">
-              </a>
-          </div>  
-          <div class="webbeer-content-logo">  
-              <a href="http://www.cervezacruzdemalta.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-cruz.png">
-              </a>
-          </div>  
-          </div>
+                <h3>C</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://cervezacallecalle.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-callecalle.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezacardelius.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo cardelius.jpeg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://cervezacelta.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/celta.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://elcesar.beer/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-cesar.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezacerrosdechena.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-cerros-de-chena.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.chesterbeer.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/chester_beer_logo.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://cervezachucao.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-chucao.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.coda.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-coda.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">  
+                    <a href="https://www.cuellonegro.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/cuello negro.png">
+                    </a>
+                </div>  
+                <div class="webbeer-content-logo">  
+                    <a href="http://www.cervezacruzdemalta.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-cruz.png">
+                    </a>
+                </div>  
+                </div>
           <div class="clearfix"></div>
           <!-- sección cervezas D -->
-          <div class="webbeer-content">
-          <h3>D</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezademonio.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-demonio.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezadiem.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-die-m.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cerveceradelpuerto.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-delpuerto.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.dolbek.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/dolbek.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://cervezadora.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-Dora.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://durness.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-durness.png">
-              </a>
-          </div>
-          </div>
-          <div class="clearfix"></div>  
-          <!-- sección cervezas E -->
-          <div class="webbeer-content">
-          <h3>E</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://www.edelstoff.cl/">
-              <img class="img-fluid" src="./img/Logos cervezas/logo-edelstoff.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://cervezaemperador.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/emperador.jpg">
-              </a>
-          </div>
+            <div class="webbeer-content">
+                    <h3>D</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezademonio.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-demonio.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezadiem.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-die-m.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cerveceradelpuerto.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-delpuerto.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.dolbek.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/dolbek.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://cervezadora.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-Dora.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://durness.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-durness.png">
+                    </a>
+                </div>
           </div>
           <div class="clearfix"></div>  
-          <!-- sección cervezas F -->
+        <!-- sección cervezas E -->
+          <div class="webbeer-content">
+                <h3>E</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.edelstoff.cl/">
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-edelstoff.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://cervezaemperador.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/emperador.jpg">
+                    </a>
+                </div>
+          </div>
+            <div class="clearfix">
+            </div>  
+        <!-- sección cervezas F -->
           <div class="webbeer-content">  
-          <h3>F</h3>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezafalken.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-falken.jpg" >
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://cervezafinisterra.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-finisterra.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezafryderup.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-fryderup.png">
-              </a>
-          </div>
+                <h3>F</h3>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezafalken.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-falken.jpg" >
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://cervezafinisterra.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-finisterra.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezafryderup.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-fryderup.png">
+                    </a>
+                </div>
           
           </div>
-          <div class="clearfix"></div>
+          <div class="clearfix">
+          </div>
           <!-- sección cervezas G -->
           <div class="webbeer-content">    
-          <h3>G</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://guayacan.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-guayacan.png">
-              </a>
+                <h3>G</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://guayacan.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-guayacan.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://granizo.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-cerveza-granizo.png" height="100px" width="200px">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://grassau.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-grassau.jpg">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://grossegerste.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-grosse.png">
+                    </a>
+                </div>
           </div>
-          <div class="webbeer-content-logo">
-              <a href="https://granizo.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-cerveza-granizo.png" height="100px" width="200px">
-              </a>
+          <div class="clearfix">
           </div>
-          <div class="webbeer-content-logo">
-              <a href="https://grassau.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-grassau.jpg">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://grossegerste.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-grosse.png">
-              </a>
-          </div>
-          </div>
-          <div class="clearfix"></div>
           <!-- sección cervezas H -->
           <div class="webbeer-content">
-          <h3>H</h3>
-          <div class="webbeer-content-logo">
-              <a href="https://hastapronto.cl/?v=5bc574a47246"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo_hastapronto.png">
-              </a>
+                <h3>H</h3>
+                <div class="webbeer-content-logo">
+                    <a href="https://hastapronto.cl/?v=5bc574a47246"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo_hastapronto.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://cervezahathor.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-hathor.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="https://www.cervezahernandodemagallanes.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-hernando.jpg" height="200px" width="200px">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://huasodelamancha.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-huaso.png">
+                    </a>
+                </div>
+                <div class="webbeer-content-logo">
+                    <a href="http://www.cervezahbh.cl/"> 
+                        <img class="img-fluid" src="./img/Logos cervezas/logo-hbh.png">
+                    </a>
+                </div>
+            </div>
+          <div class="clearfix">
           </div>
-          <div class="webbeer-content-logo">
-              <a href="https://cervezahathor.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-hathor.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="https://www.cervezahernandodemagallanes.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-hernando.jpg" height="200px" width="200px">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://huasodelamancha.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-huaso.png">
-              </a>
-          </div>
-          <div class="webbeer-content-logo">
-              <a href="http://www.cervezahbh.cl/"> 
-              <img class="img-fluid" src="./img/Logos cervezas/logo-hbh.png">
-              </a>
-          </div>
-          <div class="clearfix"></div>
           <!-- sección cervezas I -->
           <div class="webbeer-content">    
-          <h3>I</h3>
-          <div class="webbeer-content-logo">
+                <h3>I</h3>
+            <div class="webbeer-content-logo">
               <a href="https://independentzia.cl/"> 
               <img class="img-fluid" src="./img/Logos cervezas/logo-independentzia.png">
               </a>
@@ -602,7 +611,7 @@ export const cerveceriasChilenas = () => {
               </a>
           </div>
           </div>
-          </div>
+          <div class="clearfix"></div>
           <!-- sección cervezas W -->
           <div class="webbeer-content">    
           <h3>W</h3>
@@ -611,8 +620,58 @@ export const cerveceriasChilenas = () => {
               <img class="img-fluid" src="./img/Logos cervezas/logo-walung.jpg">
               </a>
           </div>
+          </div>
           <div class="clearfix"></div>  
           </section>
+        </div>
+        <footer>
+        <div class="container-primFooter"> 
+        </div> 
+        <div class="container-finFooter">
+         
+          <div class="logoSocialBeer"> 
+            <a href="#home"> 
+            <img src="./img/logo.png" alt="Logo del sitio"> 
+          </div>
+        
+          <div class="menuFooter">
+            <p class="opmenuFooter">
+              <a href="#blog"> Blog </a>
+              | &nbsp;
+              <a href="#comunibeer"> Comunibeer </a>
+              | &nbsp;
+              <a href="#dondebeber"> ¿Dónde beber? </a>
+              | &nbsp;
+              <a href="#eventos"> Eventos </a>
+              | &nbsp;
+              <a href="#abastecete"> ¡Abastécete! </a>
+              | &nbsp;
+              <a href="#cerveceriasChilenas"> Cervecerías Chilenas </a>
+            </p>
+        
+            <p class="menuiconsFooter"> 
+              <a href="#home"> 
+                <i class="fa fa-home iconFooter"> </i> 
+              </a>
+              <a href="#iniciarsesion"> 
+                <i class="fa fa-user iconFooter"></i> 
+              </a> 
+              <a href="#contacto"> 
+                <i class="fas fa-phone iconFooter"></i> 
+              </a>
+              <a href="https://open.spotify.com/embed/playlist/5vYkdZqio6UOLB1qtYGGVe?si=x3vZxUVlR3WUoaXy_tsg-A" target="_blank"> 
+                <i class="fas fa-music iconFooter"></i> 
+              </a>
+            </p>
+        
+              <p class="copyrigth">
+                ©️ 2020 Social Beer™️  | Todos los derechos reservados.
+              </p>
+            </div>
+            
+          </div>
+        
+        </footer>
       `;
   
     divCerveceriasChilenas.innerHTML = viewCerveceriasChilenas;

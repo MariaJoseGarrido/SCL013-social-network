@@ -185,9 +185,9 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
           </div>
         </div>
           <div id="reviewRow">
-          <p id="res">${doc.data().resenaCerveza}</p>          
+          <p id="res">${doc.data().resenaCerveza}</p>    
+          <button class="botonGuardar" id="guardar-${doc.id}">Guardar</button>      
         </div>
-          <button class = "botonGuardar" id="guardar-${doc.id}">Guardar</button>
           <img ${doc.data().imagenCerveza}></img>
         <div id="likeBtn">
           <a class="btnImageUnpload" id="like-${doc.id}"><i class="fas fa-beer"> ${doc.data().likes.length}</i>   

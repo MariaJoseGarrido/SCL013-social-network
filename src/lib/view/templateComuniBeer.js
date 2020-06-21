@@ -275,15 +275,6 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
 })
 
 
-/* const postContainer = document.querySelector('#post') */
-/* const deleteBtn = document.querySelector("#delete")
- deleteBtn.onclick = () => {
-  db.collection("resenas").doc(doc.id).delete().then( () => {
-    console.log("Document successfully deleted!");
-  }).catch( (error) => {
-    console.error("Error removing document: ", error);
-  });
- } */
 
 
 

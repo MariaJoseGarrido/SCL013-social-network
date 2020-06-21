@@ -32,7 +32,7 @@ export const iniciarSesion = () => {
   <span></span>
   <input autocomplete="off" class="inputWeb" type="name" id="nameRegistro" placeholder="Nombre" />
   <input autocomplete="off" class="inputWeb" type="email" id="emailRegistro" placeholder="Correo" />
-  <input autocomplete="off" class="inputWeb" type="password" id="passwordRegistro"placeholder="Contraseña" />
+  <input autocomplete="off" class="inputWeb" type="password" id="passwordRegistro" placeholder="Contraseña" />
   <button class="btnWeb" id='btnRegistrarse'>Registrarse</button>
 </form> 
   </div>

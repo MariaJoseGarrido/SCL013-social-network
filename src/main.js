@@ -1,7 +1,7 @@
 import { changeRouter } from './lib/router.js';
 import { identification } from './lib/view/templateIdentificacion.js'
 import { menu } from './lib/view/templateMenu.js';
-import { home, registrarse } from './lib/view/templateHome.js';
+import { home } from './lib/view/templateHome.js';
 // import { registrarse } from './lib/view/templateHome.js';
 import { iniciarSesion } from './lib/view/templateIniciarSesion.js';
 import { blog } from './lib/view/templateBlog.js';

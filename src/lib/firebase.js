@@ -5,7 +5,7 @@ export const loginUser = (email,password) => {
     firebase.auth().onAuthStateChanged(function(user) {
       if(user){
         if(user.emailVerified === true){
-          window.location.hash = '#home';         
+          window.location.hash = '#comunibeer';         
         }else{
           alert("Se necesita verificar email para ingresar");
           logOut();
@@ -123,3 +123,35 @@ export const observer = () => {
     }
 });
 };
+
+export const postLike = (id) => {
+  const user = firebase.auth().currentUser;
+  console.log(id)
+
+  // de la collection post traeme el documento con el ID, "id"
+  firebase.firestore().collection('resenas').doc(id).get()
+  .then((respuesta) => {
+    const post = respuesta.data();
+    if (post.likes == null || post.likes == '') {
+      post.likes = [];
+      // eslint-disable-next-line no-console
+      console.log('entró al like vacio');
+    }
+
+    if (post.likes.includes(user.uid)) {
+      for (let i = 0; i < post.likes.length; i++) {
+        if (post.likes[i] === user.uid) { // verifica si ya el usuario está en el array
+          post.likes.splice(i, 1); // sentencia para eliminar un elemento de un array
+          firebase.firestore().collection('resenas').doc(id).update({likes: post.likes})
+        }}   
+        } else {
+          post.likes.push(user.uid);
+          firebase.firestore().collection('resenas').doc(id).update({likes: post.likes})
+    }
+  })
+  .catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert(error.message);
+    });
+}

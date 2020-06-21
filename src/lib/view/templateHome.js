@@ -12,7 +12,7 @@ export const home = () => {
             <h2 id="sloganInicio" class="slogan">Tú red social cervecera</h2>
             <hr class="lineHome">
             <p>Te invitamos a participar en la comunibeer para interactuar con otros amantes de la cerveza</p>
-            <button class="btnWeb" href="#registrarse">¡Quiero ser parte!</button>
+            <a href="#iniciarsesion"><button class="btnWeb">¡Quiero ser parte!</button></a>
           </div>
       </div>
       <div class="background-map"> 
@@ -77,7 +77,7 @@ export const home = () => {
 
 
 
-export const registrarse = () => {
+/*export const registrarse = () => {
   console.log("funciona");
   const divRegistrarse = document.createElement('div');
 
@@ -105,4 +105,4 @@ export const registrarse = () => {
     login()
   })
   return divRegistrarse;
-};
+}; */

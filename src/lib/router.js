@@ -25,8 +25,6 @@ export const changeRouter = (hash) => {
         return showTemplate(hash)
     } else if (hash === '#iniciarsesion') {
         return showTemplate(hash)
-    } else if (hash === '#registrarse') {
-        return showTemplate(hash)
     } else if (hash === '#comunibeer') {
         return showTemplate(hash)
     } else if (hash === '#blog') {

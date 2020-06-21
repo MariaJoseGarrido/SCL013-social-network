@@ -1,6 +1,8 @@
 import { iniciarSesion } from './templateIniciarSesion.js';
+import {currentUser, postLike} from '../firebase.js'
 
 export const comuniBeer = () => {
+  let user = currentUser();
   const divcomuniBeer = document.createElement("div");
   const viewcomuniBeer = ` 
   <div id="containerWebComunity">
@@ -134,7 +136,9 @@ export const comuniBeer = () => {
       tipoCerveza: beerType,
       paisCerveza: beerCountry,
       resenaCerveza: beerReview,
-      imagenCerveza: beerImg
+      imagenCerveza: beerImg,
+      userId: user.uid,
+      likes: ""
   })
 
 
@@ -156,16 +160,16 @@ export const comuniBeer = () => {
 
 db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySnapshot) => {
     document.getElementById("rootReview").innerHTML='';
-    querySnapshot.forEach((doc) => { //forEach ciclos que se repiten en el documento para imprimir el dato
-    console.log(`${doc.id}`);
-    document.getElementById("rootReview").innerHTML += `
+    querySnapshot.forEach((doc) => {
+      let divPost = document.createElement("div"); //forEach ciclos que se repiten en el documento para imprimir el dato   
+      divPost.innerHTML = `
     <section id="containerReviewPost">
       <div id="post">
         <div id="menuBtn">
-          <a id="delete-${doc.id}"><i class="fas fa-trash-alt"></i>
-          </a>
-          <a href="#" id="edit"><i class="fas fa-edit"></i>
-          </a>
+          <img><i class="fas fa-trash-alt" id="delete-${doc.id}"></i>
+          </img>
+          <img><i class="fas fa-edit" id="edit-${doc.id}"></i>
+          </img>
         </div>
         <div id="textReviewPost">
           <div id="labelColumn">
@@ -175,20 +179,22 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
             <p class="labelText"> PAÍS: </p>
           </div>
           <div id="inputEntranceColumn">
-            <p class="reviewLabel"> <strong> ${doc.data().marcaCerveza} </strong> </p>
-            <p class="reviewLabel"> <strong> ${doc.data().nombreCerveza} </strong> </p>
-            <p class="reviewLabel"> <strong> ${doc.data().tipoCerveza}</strong> </p>
-            <p class="reviewLabel"> <strong> ${doc.data().paisCerveza}</strong> </p>
+            <p class="reviewLabel" id="marca"> <strong> ${doc.data().marcaCerveza} </strong> </p>
+            <p class="reviewLabel" id="nombre"> <strong> ${doc.data().nombreCerveza} </strong> </p>
+            <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
+            <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
           </div>
         </div>
           <div id="reviewRow">
-          <p>${doc.data().resenaCerveza}</p>
-          </div>
+          <p id="res">${doc.data().resenaCerveza}</p>          
+        </div>
+          <button class = "botonGuardar" id="guardar-${doc.id}">Guardar</button>
           <img ${doc.data().imagenCerveza}>
         <div id="likeBtn">
-          <a href="#" id="like"><i class="fas fa-beer"></i>
-          </a>
+          <img class="btnWeb" id="like-${doc.id}"><i class="fas fa-beer"></i>          
+          </img>          
         </div>
+        <div><p>${doc.data().likes.length}</p></div>
       </div>
         <div id="comments">
           <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>
@@ -197,7 +203,7 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         </div>  
     </section>    
     `
-    const del = document.querySelector(`#delete-${doc.id}`)
+    const del = divPost.querySelector(`#delete-${doc.id}`)
       del.addEventListener('click', () => {
         console.log("entro al boton")
         db.collection("resenas").doc(doc.id).delete()
@@ -208,6 +214,64 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         console.error("Error removing document: ", error);
         });
     })
+
+    
+      const boton = divPost.querySelector(`#guardar-${doc.id}`); 
+      boton.style.display = "none"; 
+      const edit =  divPost.querySelector(`#edit-${doc.id}`)
+      edit.addEventListener('click', () => {
+       // console.log(user.id)
+        console.log(doc.userId)  
+        console.log(divPost.querySelector("#inputEntranceColumn").textContent)      
+       // if (user.id === doc.userId){        
+        let res = divPost.querySelector("#res");
+        let nombre = divPost.querySelector("#nombre");
+        let pais = divPost.querySelector("#pais");
+        let marca = divPost.querySelector("#marca");
+        let tipo = divPost.querySelector("#tipo");
+
+          nombre.setAttribute("contenteditable", true);
+          tipo.setAttribute("contenteditable", true);
+          pais.setAttribute("contenteditable", true);
+          res.setAttribute("contenteditable", true);
+          marca.setAttribute("contenteditable", true);
+         
+          boton.style.display = "block";
+          boton.addEventListener('click', () => {
+            console.log("Entró al boton guardar")
+            db.collection("resenas").doc(doc.id).update({
+              marcaCerveza: marca.textContent,
+              nombreCerveza: nombre.textContent,
+              tipoCerveza: tipo.textContent,
+              paisCerveza: pais.textContent,
+              resenaCerveza: res.textContent,
+            })
+            .then( () => {
+            console.log("Document successfully updated!");
+            nombre.setAttribute("contenteditable", false);
+          tipo.setAttribute("contenteditable", false);
+          pais.setAttribute("contenteditable", false);
+          res.setAttribute("contenteditable", false);
+          marca.setAttribute("contenteditable", false);
+           boton.style.display = "none"; 
+            })
+            .catch( (error) => {
+            console.error("Error updating document: ", error);
+            });
+          })                
+       /* }else{
+          alert("No puedes editar un post que no creaste")
+        }*/
+    })
+
+
+    //LIKESSSS
+    const like = divPost.querySelector(`#like-${doc.id}`)
+        like.addEventListener('click', () => {
+        postLike(doc.id);
+      })
+
+    document.getElementById("rootReview").appendChild(divPost).innerHTML
   });
 })
 

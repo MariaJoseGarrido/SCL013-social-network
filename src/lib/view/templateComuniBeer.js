@@ -43,7 +43,6 @@ export const comuniBeer = () => {
       </div>
       <div id="postAndComments">
         <div id="reviewPost">
-          <h1>Post Reseñas</h1>
           <div id="rootReview"></div>
         </div>
       </div>
@@ -166,10 +165,10 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
     <section id="containerReviewPost">
       <div id="post">
         <div id="menuBtn">
-          <img><i class="fas fa-trash-alt" id="delete-${doc.id}"></i>
-          </img>
-          <img><i class="fas fa-edit" id="edit-${doc.id}"></i>
-          </img>
+          <a class="btnEditDelete"><i class="fas fa-trash-alt" id="delete-${doc.id}"></i>
+          </a>
+          <a class="btnEditDelete"><i class="fas fa-edit" id="edit-${doc.id}"></i>
+          </a>
         </div>
         <div id="textReviewPost">
           <div id="labelColumn">
@@ -189,12 +188,12 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
           <p id="res">${doc.data().resenaCerveza}</p>          
         </div>
           <button class = "botonGuardar" id="guardar-${doc.id}">Guardar</button>
-          <img ${doc.data().imagenCerveza}>
+          <img ${doc.data().imagenCerveza}></img>
         <div id="likeBtn">
-          <img class="btnWeb" id="like-${doc.id}"><i class="fas fa-beer"></i>          
-          </img>          
+          <a class="btnImageUnpload" id="like-${doc.id}"><i class="fas fa-beer"> ${doc.data().likes.length}</i>   
+          </a>          
+
         </div>
-        <div><p>${doc.data().likes.length}</p></div>
       </div>
         <div id="comments">
           <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>

@@ -826,6 +826,15 @@ label {
   text-align: center;
 }
 
+#res {
+  padding: 10px;
+  margin: 5px 20px 5px 20px;
+  background-color: #333333;
+  color: whitesmoke;
+  border-radius: 10px;
+  text-align: start;
+  }
+
 #inputCommentsBeer, #inputReviewBeer {
   resize: none;
   font-family: 'Titillium Web', sans-serif;
@@ -996,11 +1005,12 @@ margin-bottom: 30px;
   height: 10px  ;
 }
 
-#edit, #delete {
+.btnEditDelete {
+  cursor: pointer;
   color: #333;
 }
 
-#edit:hover, #delete:hover {
+.btnEditDelete:hover {
   color: goldenrod;
 }
 

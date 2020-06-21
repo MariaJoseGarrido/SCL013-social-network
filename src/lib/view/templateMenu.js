@@ -83,6 +83,13 @@ export const menu = () => {
           </a>
         </li>
         </section>
+
+        <li>
+        <a href="#home">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-text">Cerrar Sesión</span>
+        </a>
+      </li>
   </nav>
   `
 

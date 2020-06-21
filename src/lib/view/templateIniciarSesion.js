@@ -42,23 +42,6 @@ export const iniciarSesion = () => {
 
   divIniciarsesion.innerHTML = viewIniciarsesion;
 
-/*   export const observer = () => {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        console.log('existe usuario activo');
-        comuniBeer(user);
-        console.log('*******************');
-        console.log(user.emailVerified);
-        console.log('*******************');
-      } else {
-      //    User is signed out.
-        console.log('no existe usuario activo');
-      }
-    });
-  };
-  observer();
-   */
-
   return divIniciarsesion;
 };
 

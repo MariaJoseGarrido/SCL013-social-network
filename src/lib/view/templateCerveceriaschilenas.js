@@ -565,6 +565,11 @@ export const cerveceriasChilenas = () => {
               <img class="img-fluid" src="./img/Logos cervezas/Logo_ToroPaire.jpg">
               </a>
           </div>
+           <div class="webbeer-content-logo">
+              <a href="https://www.cervezatoska.com/"> 
+              <img class="img-fluid" src="./img/Logos cervezas/logo_toska.jpeg">
+              </a>
+          </div>
           <div class="webbeer-content-logo">
               <a href="https://www.cervezatotem.cl/"> 
               <img class="img-fluid" src="./img/Logos cervezas/logo-totem.webp">

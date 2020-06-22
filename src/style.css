@@ -25,7 +25,8 @@ body {
 
 .introTemplate {
   display: flex;
-  width: 800px;
+  width: calc(100% - 60px);
+  margin-left: 60px;
   height: 100%;
   background-color:#333;
 }
@@ -36,6 +37,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+
 }
 
 
@@ -661,7 +663,7 @@ h2 {
 .background-iniciar {
   background-image: url(./img/iniciar.jpg);
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -747,12 +749,12 @@ h2 {
 	flex-direction: row;
 	font-family: "Titillium Web", sans-serif;
   height: 100%;
-  width: 55%;
-  margin: 30px 40px 80px 80px;
+  width: initial;
+  overflow: hidden;
+
 }
 
 .formInicio{
-	background-color: #fcfcfc;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -773,6 +775,9 @@ background-color: #333;
   height: 500px;
   width: 380px;
   text-align: center;
+}
+.log-in{
+  background-color: #fcfcfc;
 }
 
 #textoC {
@@ -795,7 +800,9 @@ background-color: #333;
 }
 
 .contact {
-  margin-left: 100px;
+  margin: 10px;
+  margin-left: 60px;
+  width: 50%;
 }
 
 label {
@@ -848,7 +855,7 @@ label {
   justify-content: center;
 	align-items: center;
   width: 60%;
-  margin: 0px 30px 15px 120px;
+  margin: 0px 30px 15px 60px;
 }
 
 #review {
@@ -1058,14 +1065,13 @@ p:first-letter {
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
   margin-top: 30px;
-  border-radius: 25px;
-  border-bottom-right-radius: 0;
 }
 
 #comments {
   background: #333;
-  width: 60%;
+  width: 100%;
   border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #profileAndOthers {
@@ -1242,5 +1248,41 @@ color: #9a9a9a;
     .background-map{
       background-size: cover;
       background-position: -100px 0;
+    }
+    .sign-in-container{
+      display: block;
+      margin-left: 60px;
+      width: calc(100% - 60px);
+    }
+    .formInicio, .hello{
+      width: inherit;
+    }
+    .inputWeb{
+      width: 80%;
+    }
+    .contact p{
+      padding: 10px;
+    }
+    .contact{
+      width: calc(100% - 60px);
+    }
+    .shopOnline{
+      padding: 50px 0;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .shopOnline-card-text{
+      width: 100%;
+    }
+    .carousel{
+      margin-left: 60px;
+    }
+    #containerSocialNetwork{
+      display: block;
+    }
+    #reviewPostAndComments{
+      width: calc(100% - 70px);
+      margin: 0px 0px 15px 60px;
+      padding-right: 10px;
     }
   }

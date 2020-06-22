@@ -5,6 +5,10 @@ export const cerveceriasChilenas = () => {
     <div id="banner">
         <img class="logoBanner" src="./img/logo.png" alt="Logo SocialBeer">
     </div>
+    <div class="introTemplate">
+    <h6 class="introTemplateText"> Aquí encontraras solo cervecerías Chilenas que tienen página web para tu mayor seguridad, 
+    las hemos ordenado alfabeticamente para que te sea más fácil encontrarlas</h6>
+    </div>
     <div id="containerChileanBeer">
     <!-- sección cervezas -->
     <section class="webbeer">

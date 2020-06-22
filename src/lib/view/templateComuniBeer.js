@@ -175,16 +175,32 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         </div>
         <div id="textReviewPost">
           <div id="labelColumn">
-            <p class="labelText"> MARCA: </p>
-            <p class="labelText"> Nombre: </p>
-            <p class="labelText"> TIPO: </p>
-            <p class="labelText"> PAÍS: </p>
+            <div class="tagBeer">
+              <p class="labelText"> MARCA: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> NOMBRE: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> TIPO: </p>
+            </div>
+            <div class="tagBeer">
+              <p class="labelText"> PAÍS: </p>
+            </div>
           </div>
           <div id="inputEntranceColumn">
-            <p class="reviewLabel" id="marca"> <strong> ${doc.data().marcaCerveza} </strong> </p>
-            <p class="reviewLabel" id="nombre"> <strong> ${doc.data().nombreCerveza} </strong> </p>
-            <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
-            <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
+            <div class="tagBeerReview">
+              <p class="reviewLabel" id="marca"> <strong> ${doc.data().marcaCerveza} </strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="nombre"> <strong> ${doc.data().nombreCerveza} </strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="tipo"> <strong> ${doc.data().tipoCerveza}</strong> </p>
+              </div>
+              <div class="tagBeerReview">
+              <p class="reviewLabel" id="pais"> <strong> ${doc.data().paisCerveza}</strong> </p>
+              </div>
           </div>
         </div>
           <div id="reviewRow">
@@ -201,7 +217,7 @@ db.collection("resenas").orderBy("fechaPublicacion", "desc").onSnapshot((querySn
         <div id="comments">
           <textarea type='text' id="inputCommentsBeer" placeholder='Escribe un comentario' class='inputWeb review'></textarea>
           <br>
-          <button type="submit" class='btnWeb' id='btnComments'>¡comentar!</button>
+          <button type="submit" class='btnWebComments' id='btnComments'>¡comentar!</button>
         </div>  
     </section>    
     `

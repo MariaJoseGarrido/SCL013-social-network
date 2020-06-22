@@ -28,7 +28,6 @@ export const comuniBeer = () => {
           <input type="text" autocomplete="off" id="inputBeerName" placeholder='Nombre de tu cerveza (solo si tiene)' class='inputWeb'></input>
           <input type="text" autocomplete="off" id="inputBeerType" placeholder='Tipo de tu cerveza' class='inputWeb'></input>
           <input type="text" autocomplete="off" id="inputBeerCountry" placeholder='País' class='inputWeb'></input>
-          <input type="image" id="">
           <textarea type='text' id="inputReviewBeer" placeholder='Reseña de tu cerveza' class='inputWeb review'></textarea>
         </form>
         <br>
